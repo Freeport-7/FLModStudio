@@ -1,0 +1,350 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FFDB3D5-4135-435B-A446-F2D8D088AA44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FreelancerModStudio</RootNamespace>
+    <AssemblyName>FreelancerModStudio</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <ApplicationIcon>Resources\LogoIcon.ico</ApplicationIcon>
+    <StartupObject>FreelancerModStudio.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ObjectListView, Version=2.2.1.24649, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionType.cs" />
+    <Compile Include="AutoUpdate\AutoUpdate.cs" />
+    <Compile Include="Controls\SerializableDictionary.cs" />
+    <Compile Include="Data\ChangedType.cs" />
+    <Compile Include="Data\Clipboard.cs" />
+    <Compile Include="AutoUpdate\frmAutoUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoUpdate\frmAutoUpdate.Designer.cs" />
+    <Compile Include="AutoUpdate\IAutoUpdateUI.cs" />
+    <Compile Include="ObjectClone.cs" />
+    <Compile Include="ContentInterface.cs" />
+    <Compile Include="Controls\PropertyGridExtension.cs" />
+    <Compile Include="Controls\SeperatorLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UICultureChanger.cs">
+    </Compile>
+    <Compile Include="Data\ArchetypeInfo.cs" />
+    <Compile Include="Data\ArchetypeManager.cs" />
+    <Compile Include="Data\ByteLen.cs" />
+    <Compile Include="Data\CrcTool.cs" />
+    <Compile Include="Data\INI\INIOption.cs" />
+    <Compile Include="Data\INI\INIBlock.cs" />
+    <Compile Include="Data\INI\INIOptions.cs" />
+    <Compile Include="Data\INI\EditorINIBlock.cs" />
+    <Compile Include="Data\INI\EditorINIEntry.cs" />
+    <Compile Include="Data\INI\EditorINIOption.cs" />
+    <Compile Include="Data\INI\EditorINIData.cs" />
+    <Compile Include="Data\IO\FileEncoding.cs" />
+    <Compile Include="Data\ITableRow.cs" />
+    <Compile Include="Data\UTF\UTFNode.cs" />
+    <Compile Include="Data\Parser.cs" />
+    <Compile Include="Data\Table.cs" />
+    <Compile Include="Data\TableBlock.cs" />
+    <Compile Include="Data\TableData.cs" />
+    <Compile Include="Data\TableModified.cs" />
+    <Compile Include="Data\UTF\FixConstruct.cs" />
+    <Compile Include="Data\IO\UTFManager.cs" />
+    <Compile Include="Data\UTF\CmpPart.cs" />
+    <Compile Include="Data\UTF\D3DFVF.cs" />
+    <Compile Include="Data\UTF\CmpParser.cs" />
+    <Compile Include="Data\UTF\SphereConstruct.cs" />
+    <Compile Include="Data\UTF\RevConstruct.cs" />
+    <Compile Include="Data\UTF\PrisConstruct.cs" />
+    <Compile Include="Data\UTF\NodeFlags.cs" />
+    <Compile Include="Data\UTF\VMeshData.cs" />
+    <Compile Include="Data\UTF\VMeshRef.cs" />
+    <Compile Include="DevTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SystemEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SystemEditorForm.Designer.cs">
+      <DependentUpon>SystemEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TableEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableEditorForm.Designer.cs">
+      <DependentUpon>TableEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FileTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FileTypeForm.Designer.cs">
+      <DependentUpon>FileTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PropertiesForm.Designer.cs">
+      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Data\IO\BINIManager.cs" />
+    <Compile Include="Data\IO\FileManager.cs" />
+    <Compile Include="Data\IO\INIManager.cs" />
+    <Compile Include="Data\UndoManager.cs" />
+    <Compile Include="Data\Settings.cs">
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AutoUpdate\UpdateInformation.cs" />
+    <Compile Include="AutoUpdate\UpdateInformationParser.cs" />
+    <EmbeddedResource Include="Forms\MainForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoUpdate\frmAutoUpdate.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Strings.de.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Serializer.cs" />
+    <Compile Include="Properties\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Template.cs">
+    </Compile>
+    <Compile Include="Data\ChangedData.cs" />
+    <Compile Include="AutoUpdate\StatusType.cs" />
+    <Compile Include="SystemDesigner\Animator.cs" />
+    <Compile Include="SystemDesigner\Content\Connection.cs" />
+    <Compile Include="SystemDesigner\Content\ConnectionType.cs" />
+    <Compile Include="SystemDesigner\Content\ContentBase.cs" />
+    <Compile Include="SystemDesigner\Content\ContentType.cs" />
+    <Compile Include="SystemDesigner\Content\System.cs" />
+    <Compile Include="SystemDesigner\Content\SystemObject.cs" />
+    <Compile Include="SystemDesigner\Content\Zone.cs" />
+    <Compile Include="SystemDesigner\DefaultLightsVisual3D.cs" />
+    <Compile Include="SystemDesigner\Content\LightSource.cs" />
+    <Compile Include="SystemDesigner\ManipulationAxis.cs" />
+    <Compile Include="SystemDesigner\ManipulationMode.cs" />
+    <Compile Include="SystemDesigner\Matrix3DAnimation.cs" />
+    <Compile Include="SystemDesigner\SharedObjects.cs" />
+    <Compile Include="SystemDesigner\Analyzer.cs" />
+    <Compile Include="SystemDesigner\Presenter.cs" />
+    <Compile Include="SystemDesigner\SystemParser.cs" />
+    <Compile Include="SystemDesigner\UtfModel.cs" />
+    <Compile Include="SystemDesigner\ViewerType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LogoIcon.ico" />
+    <Content Include="Template.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SystemEditorForm.resx">
+      <DependentUpon>SystemEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TableEditorForm.de.resx">
+      <DependentUpon>TableEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TableEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TableEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FileTypeForm.de.resx">
+      <DependentUpon>FileTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FileTypeForm.resx">
+      <DependentUpon>FileTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsForm.de.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PropertiesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.de.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.de.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FLUtils\FLUtils.csproj">
+      <Project>{2ebbca03-fab7-499a-849f-23ef97e0bd61}</Project>
+      <Name>FLUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelixEngine\HelixEngine.csproj">
+      <Project>{93BD8CFA-B81B-46FD-8779-0DB02C2A691E}</Project>
+      <Name>HelixEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DockPanelSuite">
+      <Version>3.0.6</Version>
+    </PackageReference>
+    <PackageReference Include="DockPanelSuite.ThemeVS2015">
+      <Version>3.0.6</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers">
+      <Version>2.9.8</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeQuality.Analyzers">
+      <Version>2.9.8</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="NETStandard.Library">
+      <Version>2.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenSerializationAssembly" DependsOnTargets="AssignTargetPaths;Compile;ResolveKeySource" Inputs="$(MSBuildAllProjects);@(IntermediateAssembly)" Outputs="$(OutputPath)$(_SGenDllName)">
+    <SGen BuildAssemblyName="$(TargetFileName)" BuildAssemblyPath="$(OutputPath)" References="@(ReferencePath)" ShouldGenerateSerializer="true" UseProxyTypes="false" KeyContainer="$(KeyContainerName)" KeyFile="$(KeyOriginatorFile)" DelaySign="$(DelaySign)" ToolPath="$(SGenToolPath)">
+      <Output TaskParameter="SerializationAssembly" ItemName="SerializationAssembly" />
+    </SGen>
+  </Target>
+  <Target Name="AfterBuild" DependsOnTargets="GenSerializationAssembly" />
+</Project>

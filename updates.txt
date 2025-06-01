@@ -1,0 +1,1 @@
+1.3.1.1;https://github.com/Freeport-7/FLModStudio/releases/download/1.3.1.1/FreelancerModStudio-1.3.1.1.exe;0

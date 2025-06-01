@@ -1,0 +1,3964 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FreelancerModStudio-Template-1.0 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <File name="Game Configuration">
+      <Paths>
+        <Path>exe\freelancer.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Data">
+          <Options>
+            <Option type="String">solar</Option>
+            <Option type="String">universe</Option>
+            <Option type="String">constants</Option>
+            <Option type="String">fonts</Option>
+            <Option type="String">fonts_dir</Option>
+            <Option type="String">rich_fonts</Option>
+            <Option type="String" multiple="true">sounds</Option>
+            <Option type="String" multiple="true">voices</Option>
+            <Option type="String">explosions</Option>
+            <Option type="String">debris</Option>
+            <Option type="String">asteroids</Option>
+            <Option type="String" multiple="true">equipment</Option>
+            <Option type="String" multiple="true">ships</Option>
+            <Option type="String" multiple="true">goods</Option>
+            <Option type="String" multiple="true">loadouts</Option>
+            <Option type="String">bodyparts</Option>
+            <Option type="String">costumes</Option>
+            <Option type="String">PetalDB</Option>
+            <Option type="String" multiple="true">effects</Option>
+            <Option type="String">effect_shapes</Option>
+            <Option type="String" multiple="true">fuses</Option>
+            <Option type="String">concave</Option>
+            <Option type="String">intro</Option>
+            <Option type="String">gate_tunnels</Option>
+            <Option type="String">groups</Option>
+            <Option type="String">HUD</Option>
+            <Option type="String">jump_effect</Option>
+            <Option type="String">stars</Option>
+            <Option type="String">igraph</Option>
+            <Option type="String">bases</Option>
+            <Option type="String" multiple="true">markets</Option>
+            <Option type="String">NewCharDB</Option>
+            <Option type="String">WeaponModDB</Option>
+            <Option type="String">rtcslider</Option>
+          </Options>
+        </Block>
+        <Block name="Display">
+          <Options>
+            <Option type="Bool">fullscreen</Option>
+            <Option type="Point">size</Option>
+            <Option type="Int">color_bpp</Option>
+            <Option type="Int">depth_bpp</Option>
+          </Options>
+        </Block>
+        <Block name="Error">
+          <Options>
+            <Option multiple="true">log</Option>
+          </Options>
+        </Block>
+        <Block name="Freelancer">
+          <Options>
+            <Option type="String">data path</Option>
+            <Option type="String">local_server</Option>
+            <Option type="String">initial_world</Option>
+            <Option type="String">AppGUID</Option>
+          </Options>
+        </Block>
+        <Block name="Initial MP DLLs">
+          <Options>
+            <Option type="String">path</Option>
+            <Option multiple="true" type="StringArray">DLL</Option>
+          </Options>
+        </Block>
+        <Block name="Initial SP DLLs">
+          <Options>
+            <Option type="String">path</Option>
+            <Option multiple="true" type="StringArray">DLL</Option>
+          </Options>
+        </Block>
+        <Block name="ListServer">
+          <Options>
+            <Option type="String">hostname</Option>
+            <Option type="Int">port</Option>
+          </Options>
+        </Block>
+        <Block name="Resources">
+          <Options>
+            <Option type="String" multiple="true">DLL</Option>
+          </Options>
+        </Block>
+        <Block name="Server">
+          <Options>
+            <Option type="Int">death_penalty</Option>
+          </Options>
+        </Block>
+        <Block name="Startup">
+          <Options>
+            <Option type="String" multiple="true">movie_file</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Game Cameras">
+      <Paths>
+        <Path>cameras.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="CockpitCamera">
+          <Options>
+            <Option type="Double">fovx</Option>
+            <Option type="Double">znear</Option>
+          </Options>
+        </Block>
+        <Block name="DeathCamera">
+          <Options>
+            <Option type="Double">fovx</Option>
+          </Options>
+        </Block>
+        <Block name="RearViewCamera">
+          <Options>
+            <Option type="Double">fovx</Option>
+          </Options>
+        </Block>
+        <Block name="ThirdPersonCamera">
+          <Options>
+            <Option type="Double">fovx</Option>
+          </Options>
+        </Block>
+        <Block name="TurretCamera">
+          <Options>
+            <Option type="Double">fovx</Option>
+          </Options>
+        </Block>
+        <Block name="WinCamera">
+          <Options>
+            <Option type="Double">fovx</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Game Constants">
+      <Paths>
+        <Path>constants.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="CommConsts">
+          <Options>
+            <Option type="Double">COMM_PLAYER_FAR_DIST</Option>
+            <Option type="Double">COMM_PLAYER_FAR_DIST_ATTEN</Option>
+            <Option type="Double">CHATTER_MAX_DIST</Option>
+            <Option type="Double">CHATTER_MAX_DIST_ATTEN</Option>
+            <Option type="Double">CHATTER_START_ATTEN</Option>
+            <Option type="Double">COMM_CONFLICT_PRIORITY_CUTOFF</Option>
+            <Option type="Double">WALLA_MAX_DIST</Option>
+            <Option type="Double">WALLA_MAX_DIST_ATTEN</Option>
+            <Option type="Double">WALLA_START_ATTEN</Option>
+            <Option type="Double">WALLA_PRIORITY_CUTOFF</Option>
+          </Options>
+        </Block>
+        <Block name="Constants">
+          <Options>
+            <Option type="Double">COLLISION_DAMAGE_FACTOR</Option>
+            <Option type="Double">MUSIC_CROSS_FADE_DELAY</Option>
+            <Option type="Double">MUZZLE_CONE_ANGLE</Option>
+            <Option type="Double">PLAYER_COLLISION_GROUP_HIT_PTS_SCALE</Option>
+            <Option type="Double">PLAYER_ATTACHED_EQUIP_HIT_PTS_SCALE</Option>
+          </Options>
+        </Block>
+        <Block name="EngineEquipConsts">
+          <Options>
+            <Option type="Double">CRUISE_DISRUPT_TIME</Option>
+            <Option type="Double">MAX_DELTA_FX_THROTTLE</Option>
+            <Option type="Double">THROTTLE_STEADY_TIME</Option>
+            <Option type="Double">THROTTLE_ATTEN_MOD_RANGE</Option>
+            <Option type="Double">DELTA_THROTTLE_ATTEN_MOD_CHANGING</Option>
+            <Option type="Double">DELTA_THROTTLE_ATTEN_MOD_STEADY</Option>
+            <Option type="Double">CRUISE_STEADY_TIME</Option>
+            <Option type="Double">DELTA_CRUISE_ATTEN_MOD_STEADY</Option>
+            <Option type="Double">CRUISE_ATTEN_MOD_RANGE</Option>
+          </Options>
+        </Block>
+        <Block name="PhySysConsts">
+          <Options>
+            <Option type="Double">MATERIAL_FRICTION</Option>
+            <Option type="Double">MATERIAL_ELASTICITY</Option>
+            <Option type="Double">DEFAULT_LINEAR_DAMPING</Option>
+            <Option type="StringArray">DEFAULT_ANGULAR_DAMPING</Option>
+          </Options>
+        </Block>
+        <Block name="ShieldEquipConsts">
+          <Options>
+            <Option type="Double">HULL_DAMAGE_FACTOR</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Game IGraph">
+      <Paths>
+        <Path>igraph.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="IGraph" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">type</Option>
+            <Option type="String" multiple="true">point</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Game Initial World">
+      <Paths>
+        <Path>initialworld.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Group" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">ids_name</Option>
+            <Option type="Int">ids_info</Option>
+            <Option type="Int">ids_short_name</Option>
+            <Option type="Point" multiple="true">rep</Option>
+          </Options>
+        </Block>
+        <Block name="locked_gates">
+          <Options>
+            <Option type="Int" multiple="true">locked_gate</Option>
+            <Option type="Int" multiple="true">npc_locked_gate</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Game Mouse">
+      <Paths>
+        <Path>mouse.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Cursor" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="StringArray">anim</Option>
+            <Option type="Point">hotspot</Option>
+            <Option type="Int">blend</Option>
+            <Option type="Int">spin</Option>
+            <Option type="Double">scale</Option>
+            <Option type="IntArray">color</Option>
+          </Options>
+        </Block>
+        <Block name="Shape" multiple="true" identifier="name">
+          <Options>
+            <Option type="String">name</Option>
+            <Option type="Int">x</Option>
+            <Option type="Int">y</Option>
+            <Option type="Int">w</Option>
+            <Option type="Int">h</Option>
+          </Options>
+        </Block>
+        <Block name="Texture">
+          <Options>
+            <Option type="String">file</Option>
+            <Option type="String">name</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Game Petal Db">
+      <Paths>
+        <Path>petaldb.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="ObjectTable">
+          <Options>
+            <Option type="String" multiple="true">room</Option>
+            <Option type="String" multiple="true" parent="room">prop</Option>
+            <Option type="String" multiple="true">cart</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Audio Sounds">
+      <Paths>
+        <Path>audio\*sounds.ini</Path>
+        <Path>audio\music.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Sound" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">type</Option>
+            <Option type="String">file</Option>
+            <Option type="Double">attenuation</Option>
+            <Option type="DoubleArray">range</Option>
+            <Option type="Double">crv_pitch</Option>
+            <Option type="Bool">pitch_bendable</Option>
+            <Option type="Bool">is_2d</Option>
+            <Option type="Bool">streamer</Option>
+            <Option type="Int">persistent</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Audio Sound Configuration">
+      <Paths>
+        <Path>audio\soundcfg.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="CFG">
+          <Options>
+            <Option type="Double">ear_doppler_factor</Option>
+            <Option type="Double">ducking_rtc_down_by</Option>
+            <Option type="Double">ducking_rtc_down_time</Option>
+            <Option type="Double">default_crv_pitch</Option>
+            <Option type="Double">default_crv_attenuation</Option>
+            <Option type="Double">music_fade_time</Option>
+            <Option type="Double">cross_fade_silence</Option>
+            <Option type="Double">cockpit_attenuation</Option>
+            <Option type="Double">ducking_spaceflight_down_by</Option>
+            <Option type="Double">ducking_spaceflight_down_time</Option>
+            <Option type="Double">ducking_spaceflight_up_time</Option>
+            <Option type="Double">spaceflight_dialogue_pan_range</Option>
+            <Option type="Double">ducking_comm_down_by</Option>
+            <Option type="Double">ducking_comm_down_time</Option>
+            <Option type="Double">ducking_comm_up_time</Option>
+            <Option type="Double">master_music</Option>
+            <Option type="Double">master_ambient</Option>
+            <Option type="Double">master_interface</Option>
+            <Option type="Double">master_sfx</Option>
+            <Option type="Double">master_voice</Option>
+          </Options>
+        </Block>
+        <Block name="reverb" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Vector">settings</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Audio Voices">
+      <Paths>
+        <Path>audio\voices*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="mVoiceProp" multiple="true" identifier="Voice">
+          <Options>
+            <Option type="String">Voice</Option>
+            <Option type="Int">gender</Option>
+            <Option type="String">supports_roles</Option>
+          </Options>
+        </Block>
+        <Block name="Sound" multiple="true" identifier="msg">
+          <Options>
+            <Option type="String">msg</Option>
+            <Option type="Double">priority</Option>
+            <Option type="Double">duration</Option>
+            <Option type="Double">attenuation</Option>
+          </Options>
+        </Block>
+        <Block name="Voice" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">extend</Option>
+            <Option type="String" multiple="true">script</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Characters Body Parts">
+      <Paths>
+        <Path>characters\bodyparts.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Accessory" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">mesh</Option>
+            <Option type="String">hardpoint</Option>
+            <Option type="String">body_hardpoint</Option>
+          </Options>
+        </Block>
+        <Block name="Animations">
+          <Options>
+            <Option type="String" multiple="true">anim</Option>
+          </Options>
+        </Block>
+        <Block name="Body" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">mesh</Option>
+          </Options>
+        </Block>
+        <Block name="DetailSwitchTable" multiple="true">
+          <Options>
+            <Option type="Point" multiple="true">switch</Option>
+          </Options>
+        </Block>
+        <Block name="Head" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">mesh</Option>
+          </Options>
+        </Block>
+        <Block name="LeftHand" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">mesh</Option>
+          </Options>
+        </Block>
+        <Block name="PetalAnimations" multiple="true">
+          <Options>
+            <Option type="String" multiple="true">anim</Option>
+          </Options>
+        </Block>
+        <Block name="RightHand" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">mesh</Option>
+          </Options>
+        </Block>
+        <Block name="Skeleton" multiple="true" identifier="sex">
+          <Options>
+            <Option type="Int">sex</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Characters Costumes">
+      <Paths>
+        <Path>characters\costumes.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Costume" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">head</Option>
+            <Option type="String">body</Option>
+            <Option type="String">righthand</Option>
+            <Option type="String">lefthand</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Characters New Character">
+      <Paths>
+        <Path>characters\newcharacter.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Faction">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">rep_group</Option>
+            <Option type="String">base</Option>
+            <Option type="String">Package</Option>
+            <Option type="String">Pilot</Option>
+          </Options>
+        </Block>
+        <Block name="Package">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">strid_name</Option>
+            <Option type="Int">strid_desc</Option>
+            <Option type="String">ship</Option>
+            <Option type="String">loadout</Option>
+            <Option type="Int">money</Option>
+          </Options>
+        </Block>
+        <Block name="Pilot">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">body</Option>
+            <Option type="String">comm</Option>
+            <Option type="String">voice</Option>
+            <Option type="String">body.anim</Option>
+            <Option type="StringArray">comm.anim</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Cockpits">
+      <Paths>
+        <Path>cockpits\*\*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Cockpit">
+          <Options>
+            <Option type="String">mesh</Option>
+            <Option type="Double">int_brightness</Option>
+            <Option type="Point">head_turn</Option>
+          </Options>
+        </Block>
+        <Block name="CockpitCamera">
+          <Options>
+            <Option type="Double">znear</Option>
+          </Options>
+        </Block>
+        <Block name="RearViewCamera">
+          <Options>
+            <Option type="Vector">view_position</Option>
+          </Options>
+        </Block>
+        <Block name="TurretCamera">
+          <Options>
+            <Option type="Vector">tether</Option>
+            <Option type="Double">yaw_rotate_speed</Option>
+            <Option type="Double">pitch_rotate_speed</Option>
+            <Option type="Double">accel_speed</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Equipment Commodities per Faction">
+      <Paths>
+        <Path>equipment\commodities_per_faction.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="FactionGood" multiple="true" identifier="faction">
+          <Options>
+            <Option type="String">faction</Option>
+            <Option type="StringArray" multiple="true">MarketGood</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Equipment">
+      <Paths>
+        <Path>equipment\*equip*</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Armor" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Double">hit_pts_scale</Option>
+          </Options>
+        </Block>
+        <Block name="AttachedFX" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">particles</Option>
+            <Option type="Bool">use_throttle</Option>
+          </Options>
+        </Block>
+        <Block name="CargoPod" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Point">LODranges</Option>
+            <Option type="String">DA_archetype</Option>
+            <Option type="String">material_library</Option>
+            <Option type="String">HP_child</Option>
+            <Option type="Double">hit_pts</Option>
+            <Option type="Double">mass</Option>
+            <Option type="String">explosion_arch</Option>
+            <Option type="Double">parent_impulse</Option>
+            <Option type="Double">child_impulse</Option>
+            <Option type="String">debris_type</Option>
+          </Options>
+        </Block>
+        <Block name="CloakingDevice" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">ids_name</Option>
+            <Option type="Int">ids_info</Option>
+            <Option type="Double">hit_pts</Option>
+            <Option type="String">DA_archetype</Option>
+            <Option type="String" multiple="true">material_library</Option>
+            <Option type="String">HP_child</Option>
+            <Option type="Double">mass</Option>
+            <Option type="Double">volume</Option>
+            <Option type="Double">power_usage</Option>
+            <Option type="Double">cloakin_time</Option>
+            <Option type="Double">cloakout_time</Option>
+            <Option type="String">cloakin_fx</Option>
+            <Option type="String">cloakout_fx</Option>
+            <Option type="String">debris_type</Option>
+          </Options>
+        </Block>
+        <Block name="Commodity" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">ids_name</Option>
+            <Option type="Int">ids_info</Option>
+            <Option type="Int">units_per_container</Option>
+            <Option type="String">pod_appearance</Option>
+            <Option type="String">loot_appearance</Option>
+            <Option type="Double">decay_per_second</Option>
+            <Option type="Double">volume</Option>
+            <Option type="Double">hit_pts</Option>
+          </Options>
+        </Block>
+        <Block name="CounterMeasure" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Double">hit_pts</Option>
+            <Option type="String">loot_appearance</Option>
+            <Option type="Int">units_per_container</Option>
+            <Option type="String">one_shot_sound</Option>
+            <Option type="String">const_effect</Option>
+            <Option type="Double">lifetime</Option>
+            <Option type="String">DA_archetype</Option>
+            <Option type="String">material_library</Option>
+            <Option type="Int">ids_name</Option>
+            <Option type="Int">ids_info</Option>
+            <Option type="Double">mass</Option>
+            <Option type="Double">volume</Option>
+            <Option type="Double">owner_safe_time</Option>
+            <Option type="Bool">force_gun_ori</Option>
+            <Option type="Bool">requires_ammo</Option>
+            <Option type="Double">linear_drag</Option>
+            <Option type="Double">range</Option>
+            <Option type="Int">diversion_pctg</Option>
+          </Options>
+        </Block>
+        <Block name="CounterMeasureDropper" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">ids_name</Option>
+            <Option type="Int">ids_info</Option>
+            <Option type="String">DA_archetype</Option>
+            <Option type="String">material_library</Option>
+            <Option type="String">HP_child</Option>
+            <Option type="Double">hit_pts</Option>
+            <Option type="Double">explosion_resistance</Option>
+            <Option type="String">debris_type</Option>
+            <Option type="Double">parent_impulse</Option>
+            <Option type="Double">child_impulse</Option>
+            <Option type="Double">volume</Option>
+            <Option type="Double">mass</Option>
+            <Option type="Double">power_usage</Option>
+            <Option type="Double">refire_delay</Option>
+            <Option type="Double">muzzle_velocity</Option>
+            <Option type="String">flash_particle_name</Option>
+            <Option type="Double">flash_radius</Option>
+            <Option type="String">light_anim</Option>
+            <Option type="String">projectile_archetype</Option>
+            <Option type="String">separation_explosion</Option>
+            <Option type="Double">AI_range</Option>
+            <Option type="Bool">lootable</Option>
+          </Options>
+        </Block>
+        <Block name="Engine" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">ids_name</Option>
+            <Option type="Int">ids_info</Option>
+            <Option type="Double">volume</Option>
+            <Option type="Double">mass</Option>
+            <Option type="Double">max_force</Option>
+            <Option type="Double">linear_drag</Option>
+            <Option type="Double">power_usage</Option>
+            <Option type="Double">reverse_fraction</Option>
+            <Option type="String">flame_effect</Option>
+            <Option type="String">trail_effect</Option>
+            <Option type="String">trail_effect_player</Option>
+            <Option type="String">cruise_disrupt_effect</Option>
+            <Option type="Double">cruise_charge_time</Option>
+            <Option type="Double">cruise_power_usage</Option>
+            <Option type="String">character_start_sound</Option>
+            <Option type="String">character_loop_sound</Option>
+            <Option type="Point">character_pitch_range</Option>
+            <Option type="String">rumble_sound</Option>
+            <Option type="Point">rumble_pitch_range</Option>
+            <Option type="Point">rumble_atten_range</Option>
+            <Option type="String">engine_kill_sound</Option>
+            <Option type="String">cruise_start_sound</Option>
+            <Option type="String">cruise_loop_sound</Option>
+            <Option type="String">cruise_stop_sound</Option>
+            <Option type="String">cruise_disrupt_sound</Option>
+            <Option type="String">cruise_backfire_sound</Option>
+            <Option type="Bool">indestructible</Option>
+            <Option type="Int">inside_sound_cone</Option>
+            <Option type="Int">outside_sound_cone</Option>
+            <Option type="Int">outside_cone_attenuation</Option>
+          </Options>
+        </Block>
+        <Block name="Explosion" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="StringArray">effect</Option>
+            <Option type="Point">lifetime</Option>
+            <Option type="Int">process</Option>
+            <Option type="Double">strength</Option>
+            <Option type="Double">radius</Option>
+            <Option type="Double">hull_damage</Option>
+            <Option type="Double">energy_damage</Option>
+            <Option type="Double">impulse</Option>
+          </Options>
+        </Block>
+        <Block name="Gun" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">ids_name</Option>
+            <Option type="Int">ids_info</Option>
+            <Option type="String">DA_archetype</Option>
+            <Option type="String">material_library</Option>
+            <Option type="String">HP_child</Option>
+            <Option type="Double">hit_pts</Option>
+            <Option type="Double">explosion_resistance</Option>
+            <Option type="String">debris_type</Option>
+            <Option type="Double">parent_impulse</Option>
+            <Option type="Double">child_impulse</Option>
+            <Option type="Double">volume</Option>
+            <Option type="Double">mass</Option>
+            <Option type="Int">hp_gun_type</Option>
+            <Option type="Double">damage_per_fire</Option>
+            <Option type="Double">power_usage</Option>
+            <Option type="Double">refire_delay</Option>
+            <Option type="Double">muzzle_velocity</Option>
+            <Option type="String">use_animation</Option>
+            <Option type="Double">toughness</Option>
+            <Option type="String">flash_particle_name</Option>
+            <Option type="Int">flash_radius</Option>
+            <Option type="String">light_anim</Option>
+            <Option type="String">projectile_archetype</Option>
+            <Option type="String">dry_fire_sound</Option>
+            <Option type="String">separation_explosion</Option>
+            <Option type="Bool">auto_turret</Option>
+            <Option type="Double">turn_rate</Option>
+            <Option type="Bool">lootable</Option>
+            <Option type="Point">LODranges</Option>
+          </Options>
+        </Block>
+        <Block name="InternalFX" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">use_sound</Option>
+            <Option type="String">use_animation</Option>
+          </Options>
+        </Block>
+        <Block name="Light" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">inherit</Option>
+            <Option type="Bool">always_on</Option>
+            <Option type="Bool">docking_light</Option>
+            <Option type="Rgb">min_color</Option>
+            <Option type="Rgb">glow_color</Option>
+            <Option type="Rgb">color</Option>
+            <Option type="Double">bulb_size</Option>
+            <Option type="Double">glow_size</Option>
+            <Option type="Point">flare_cone</Option>
+            <Option type="Double">avg_delay</Option>
+            <Option type="Double">blink_duration</Option>
+            <Option type="Double">intensity</Option>
+            <Option type="Double">lightsource_cone</Option>
+          </Options>
+        </Block>
+        <Block name="LOD" multiple="true" identifier="obj">
+          <Options>
+            <Option type="String">obj</Option>
+            <Option type="Point">LODranges</Option>
+          </Options>
+        </Block>
+        <Block name="LootCrate" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">DA_archetype</Option>
+            <Option type="String">material_library</Option>
+            <Option type="Point">LODranges</Option>
+            <Option type="Double">hit_pts</Option>
+            <Option type="Double">mass</Option>
+            <Option type="String">explosion_arch</Option>
+          </Options>
+        </Block>
+        <Block name="Mine" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="String">explosion_arch</Option>
+            <Option type="String">loot_appearance</Option>
+            <Option type="Int">units_per_container</Option>
+            <Option type="Bool">requires_ammo</Option>
+            <Option type="Double">hit_pts</Option>
+            <Option type="String">one_shot_sound</Option>
+            <Option type="Double">detonation_dist</Option>
+            <Option>lifetime</Option>
+            <Option>force_gun_ori</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>mass</Option>
+            <Option>volume</Option>
+            <Option>owner_safe_time</Option>
+            <Option>linear_drag</Option>
+            <Option>seek_dist</Option>
+            <Option>top_speed</Option>
+            <Option>acceleration</Option>
+            <Option>const_effect</Option>
+          </Options>
+        </Block>
+        <Block name="MineDropper" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>HP_child</Option>
+            <Option>hit_pts</Option>
+            <Option>explosion_resistance</Option>
+            <Option>debris_type</Option>
+            <Option>parent_impulse</Option>
+            <Option>child_impulse</Option>
+            <Option>volume</Option>
+            <Option>mass</Option>
+            <Option>damage_per_fire</Option>
+            <Option>power_usage</Option>
+            <Option>refire_delay</Option>
+            <Option>muzzle_velocity</Option>
+            <Option>toughness</Option>
+            <Option>projectile_archetype</Option>
+            <Option>dry_fire_sound</Option>
+            <Option>separation_explosion</Option>
+            <Option>lootable</Option>
+            <Option>LODranges</Option>
+          </Options>
+        </Block>
+        <Block name="Motor" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>lifetime</Option>
+            <Option>accel</Option>
+            <Option>delay</Option>
+          </Options>
+        </Block>
+        <Block name="Munition" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>explosion_arch</Option>
+            <Option>loot_appearance</Option>
+            <Option>units_per_container</Option>
+            <Option>hp_type</Option>
+            <Option>requires_ammo</Option>
+            <Option>hit_pts</Option>
+            <Option>hull_damage</Option>
+            <Option>energy_damage</Option>
+            <Option>weapon_type</Option>
+            <Option>one_shot_sound</Option>
+            <Option>munition_hit_effect</Option>
+            <Option>const_effect</Option>
+            <Option>detonation_dist</Option>
+            <Option>lifetime</Option>
+            <Option>Motor</Option>
+            <Option>force_gun_ori</Option>
+            <Option>HP_trail_parent</Option>
+            <Option>seeker</Option>
+            <Option>time_to_lock</Option>
+            <Option>seeker_range</Option>
+            <Option>seeker_fov_deg</Option>
+            <Option>max_angular_velocity</Option>
+            <Option>cruise_disruptor</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>mass</Option>
+            <Option>volume</Option>
+          </Options>
+        </Block>
+        <Block name="Power" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>hit_pts</Option>
+            <Option>mass</Option>
+            <Option>volume</Option>
+            <Option>capacity</Option>
+            <Option>charge_rate</Option>
+            <Option>thrust_capacity</Option>
+            <Option>thrust_charge_rate</Option>
+            <Option>lootable</Option>
+          </Options>
+        </Block>
+        <Block name="RepairKit">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>volume</Option>
+            <Option>mass</Option>
+            <Option>hit_pts</Option>
+            <Option>loot_appearance</Option>
+            <Option>units_per_container</Option>
+            <Option>lootable</Option>
+          </Options>
+        </Block>
+        <Block name="Scanner" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>volume</Option>
+            <Option>mass</Option>
+            <Option>range</Option>
+            <Option>cargo_scan_range</Option>
+            <Option>lootable</Option>
+          </Options>
+        </Block>
+        <Block name="Shield" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>DA_archetype</Option>
+            <Option>HP_child</Option>
+          </Options>
+        </Block>
+        <Block name="ShieldBattery">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>volume</Option>
+            <Option>mass</Option>
+            <Option>hit_pts</Option>
+            <Option>loot_appearance</Option>
+            <Option>units_per_container</Option>
+            <Option>lootable</Option>
+          </Options>
+        </Block>
+        <Block name="ShieldGenerator" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>LODranges</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>mass</Option>
+            <Option>volume</Option>
+            <Option>hit_pts</Option>
+            <Option>HP_child</Option>
+            <Option>debris_type</Option>
+            <Option>regeneration_rate</Option>
+            <Option>constant_power_draw</Option>
+            <Option>rebuild_power_draw</Option>
+            <Option>max_capacity</Option>
+            <Option>hp_type</Option>
+            <Option>offline_rebuild_time</Option>
+            <Option>offline_threshold</Option>
+            <Option multiple="true">shield_hit_effects</Option>
+            <Option>shield_collapse_sound</Option>
+            <Option>shield_collapse_particle</Option>
+            <Option>shield_rebuilt_sound</Option>
+            <Option>explosion_resistance</Option>
+            <Option>parent_impulse</Option>
+            <Option>child_impulse</Option>
+            <Option>toughness</Option>
+            <Option>separation_explosion</Option>
+            <Option>shield_type</Option>
+            <Option>lootable</Option>
+          </Options>
+        </Block>
+        <Block name="Thruster" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>HP_child</Option>
+            <Option>hit_pts</Option>
+            <Option>explosion_resistance</Option>
+            <Option>debris_type</Option>
+            <Option>parent_impulse</Option>
+            <Option>child_impulse</Option>
+            <Option>volume</Option>
+            <Option>mass</Option>
+            <Option>max_force</Option>
+            <Option>particles</Option>
+            <Option>hp_particles</Option>
+            <Option>power_usage</Option>
+            <Option>lootable</Option>
+            <Option>separation_explosion</Option>
+            <Option>LODranges</Option>
+          </Options>
+        </Block>
+        <Block name="Tractor">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>volume</Option>
+            <Option>mass</Option>
+            <Option>max_length</Option>
+            <Option>reach_speed</Option>
+            <Option>color</Option>
+            <Option>operating_effect</Option>
+            <Option>tractor_complete_snd</Option>
+            <Option>lootable</Option>
+          </Options>
+        </Block>
+        <Block name="TradeLane">
+          <Options>
+            <Option>nickname</Option>
+            <Option>tl_ship_enter</Option>
+            <Option>tl_ship_travel</Option>
+            <Option>tl_ship_exit</Option>
+            <Option>tl_ship_disrupt</Option>
+            <Option>tl_player_travel</Option>
+            <Option>tl_player_splash</Option>
+            <Option>secs_before_enter</Option>
+            <Option>secs_before_splash</Option>
+            <Option>secs_before_exit</Option>
+            <Option>tl_ring_active</Option>
+            <Option>spin_max</Option>
+            <Option>spin_accel</Option>
+            <Option>activation_start</Option>
+            <Option>activation_end</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Equipment Goods">
+      <Paths>
+        <Path>equipment\*good*</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Good" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>msg_id_prefix</Option>
+            <Option>equipment</Option>
+            <Option>category</Option>
+            <Option>ship</Option>
+            <Option>price</Option>
+            <Option>item_icon</Option>
+            <Option>combinable</Option>
+            <Option>free_ammo</Option>
+            <Option>good_sell_price</Option>
+            <Option>bad_buy_price</Option>
+            <Option>bad_sell_price</Option>
+            <Option>good_buy_price</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>shop_archetype</Option>
+            <Option>material_library</Option>
+            <Option>jump_dist</Option>
+            <Option>hull</Option>
+            <Option multiple="true">addon</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Equipment Market">
+      <Paths>
+        <Path>equipment\market*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="BaseGood" multiple="true" identifier="base">
+          <Options>
+            <Option>base</Option>
+            <Option multiple="true">MarketGood</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Equipment Weapon Mod Db">
+      <Paths>
+        <Path>equipment\weaponmoddb.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="WeaponType" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option multiple="true">shield_mod</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Fonts">
+      <Paths>
+        <Path>fonts\fonts.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="TrueType" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>font</Option>
+            <Option>fixed_height</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Fonts Rich Fonts">
+      <Paths>
+        <Path>fonts\rich_fonts.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Style" multiple="true" identifier="name">
+          <Options>
+            <Option>name</Option>
+            <Option>font</Option>
+            <Option>bold</Option>
+            <Option>italic</Option>
+            <Option>underline</Option>
+            <Option>color</Option>
+            <Option>justify</Option>
+          </Options>
+        </Block>
+        <Block name="TrueType">
+          <Options>
+            <Option multiple="true">font</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Effects">
+      <Paths>
+        <Path>fx\*effects*.ini</Path>
+        <Path>fx\effect_types.ini</Path>
+        <Path>fx\*\*ale.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="BeamBolt" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>tip_length</Option>
+            <Option>tail_length</Option>
+            <Option>core_length</Option>
+            <Option>head_width</Option>
+            <Option>core_width</Option>
+            <Option>sec_core_width</Option>
+            <Option>tip_color</Option>
+            <Option>core_color</Option>
+            <Option>outter_color</Option>
+            <Option>sec_core_color</Option>
+            <Option>sec_outter_color</Option>
+            <Option>tail_color</Option>
+            <Option>head_brightness</Option>
+            <Option>trail_brightness</Option>
+            <Option>head_texture</Option>
+            <Option>trail_texture</Option>
+            <Option>flash_size</Option>
+          </Options>
+        </Block>
+        <Block name="BeamSpear" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>tip_length</Option>
+            <Option>tail_length</Option>
+            <Option>head_width</Option>
+            <Option>core_width</Option>
+            <Option>tip_color</Option>
+            <Option>core_color</Option>
+            <Option>outter_color</Option>
+            <Option>tail_color</Option>
+            <Option>head_brightness</Option>
+            <Option>trail_brightness</Option>
+            <Option>head_texture</Option>
+            <Option>trail_texture</Option>
+            <Option>flash_size</Option>
+          </Options>
+        </Block>
+        <Block name="Effect" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>effect_type</Option>
+            <Option>vis_effect</Option>
+            <Option>vis_generic</Option>
+            <Option>vis_beam</Option>
+            <Option>snd_effect</Option>
+            <Option>lgt_effect</Option>
+            <Option>lgt_range_scale</Option>
+            <Option>lgt_radius</Option>
+          </Options>
+        </Block>
+        <Block name="EffectLOD" multiple="true" identifier="type">
+          <Options>
+            <Option>type</Option>
+            <Option>max_lod_screen_size</Option>
+            <Option>min_lod_screen_size</Option>
+            <Option>min_screen_size</Option>
+          </Options>
+        </Block>
+        <Block name="EffectType" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>priority</Option>
+            <Option>generic_priority</Option>
+            <Option>lod_type</Option>
+            <Option>radius</Option>
+            <Option>visibility</Option>
+            <Option>update</Option>
+            <Option>run_time</Option>
+            <Option>pbubble</Option>
+          </Options>
+        </Block>
+        <Block name="VisEffect" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>alchemy</Option>
+            <Option>effect_crc</Option>
+            <Option multiple="true">textures</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Effect Shapes">
+      <Paths>
+        <Path>fx\effect_shapes.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Texture" multiple="true">
+          <Options>
+            <Option>file</Option>
+            <Option multiple="true">tex_shape</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Effect Explosions">
+      <Paths>
+        <Path>fx\explosions.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Debris" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>death_method</Option>
+            <Option>lifetime</Option>
+            <Option>linear_drag</Option>
+            <Option>angular_drag</Option>
+            <Option>rotation_inertia</Option>
+            <Option>trail</Option>
+            <Option>explosion</Option>
+          </Options>
+        </Block>
+        <Block name="explosion" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>lifetime</Option>
+            <Option>process</Option>
+            <Option>effect</Option>
+            <Option>num_child_pieces</Option>
+            <Option>debris_impulse</Option>
+            <Option multiple="true">debris_type</Option>
+            <Option>innards_debris_start_time</Option>
+            <Option>innards_debris_num</Option>
+            <Option>innards_debris_radius</Option>
+            <Option multiple="true">innards_debris_object</Option>
+            <Option>radius</Option>
+            <Option>hull_damage</Option>
+          </Options>
+        </Block>
+        <Block name="Simple" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>Mass</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Effect Fuses">
+      <Paths>
+        <Path>fx\fuse*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="damage_group" multiple="true" identifier="group_name">
+          <Options>
+            <Option>group_name</Option>
+            <Option>at_t</Option>
+            <Option>damage_type</Option>
+            <Option>hitpoints</Option>
+          </Options>
+        </Block>
+        <Block name="damage_root" multiple="true">
+          <Options>
+            <Option>at_t</Option>
+            <Option>damage_type</Option>
+            <Option>hitpoints</Option>
+          </Options>
+        </Block>
+        <Block name="destroy_group" multiple="true" identifier="group_name">
+          <Options>
+            <Option>at_t</Option>
+            <Option>group_name</Option>
+            <Option>fate</Option>
+          </Options>
+        </Block>
+        <Block name="destroy_hp_attachment" multiple="true" identifier="hardpoint">
+          <Options>
+            <Option>hardpoint</Option>
+            <Option>at_t</Option>
+            <Option>fate</Option>
+          </Options>
+        </Block>
+        <Block name="destroy_root" multiple="true">
+          <Options>
+            <Option>at_t</Option>
+          </Options>
+        </Block>
+        <Block name="dump_cargo">
+          <Options>
+            <Option>at_t</Option>
+            <Option>origin_hardpoint</Option>
+          </Options>
+        </Block>
+        <Block name="fuse" multiple="true" identifier="name">
+          <Options>
+            <Option>name</Option>
+            <Option>lifetime</Option>
+            <Option>death_fuse</Option>
+          </Options>
+        </Block>
+        <Block name="ignite_fuse" multiple="true" identifier="fuse">
+          <Options>
+            <Option>at_t</Option>
+            <Option>fuse</Option>
+            <Option>fuse_t</Option>
+          </Options>
+        </Block>
+        <Block name="impulse" multiple="true" identifier="hardpoint">
+          <Options>
+            <Option>at_t</Option>
+            <Option>hardpoint</Option>
+            <Option>pos_offset</Option>
+            <Option>radius</Option>
+            <Option>force</Option>
+            <Option>damage</Option>
+          </Options>
+        </Block>
+        <Block name="make_invincible">
+          <Options>
+            <Option>turn_on</Option>
+          </Options>
+        </Block>
+        <Block name="start_cam_particles" multiple="true" identifier="effect">
+          <Options>
+            <Option>effect</Option>
+            <Option>at_t</Option>
+            <Option>pos_offset</Option>
+            <Option>ori_offset</Option>
+          </Options>
+        </Block>
+        <Block name="start_effect" multiple="true" identifier="effect">
+          <Options>
+            <Option>effect</Option>
+            <Option>particles</Option>
+            <Option multiple="true">hardpoint</Option>
+            <Option>at_t</Option>
+            <Option>pos_offset</Option>
+            <Option>ori_offset</Option>
+            <Option>attached</Option>
+          </Options>
+        </Block>
+        <Block name="tumble">
+          <Options>
+            <Option>at_t</Option>
+            <Option>ang_drag_scale</Option>
+            <Option>turn_throttle_z</Option>
+            <Option>turn_throttle_x</Option>
+            <Option>turn_throttle_y</Option>
+            <Option>throttle</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Effect Gate Tunnel">
+      <Paths>
+        <Path>fx\gate_tunnel.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="gate_tunnel" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>write_depth_buffer</Option>
+            <Option>num_spline_control_points</Option>
+            <Option>x_range</Option>
+            <Option>y_range</Option>
+            <Option>z_range</Option>
+            <Option>min_radius</Option>
+            <Option>max_radius</Option>
+            <Option>far_radius_factor</Option>
+            <Option>min_speed</Option>
+            <Option>max_speed</Option>
+            <Option>time_to_max_speed</Option>
+            <Option>fade_distance</Option>
+            <Option>near_alpha</Option>
+            <Option>far_alpha</Option>
+            <Option>num_t_steps</Option>
+            <Option>num_s_steps</Option>
+            <Option>min_rotation</Option>
+            <Option>max_rotation</Option>
+            <Option>min_rgb</Option>
+            <Option>max_rgb</Option>
+          </Options>
+        </Block>
+        <Block name="layer" multiple="true" identifier="texture">
+          <Options>
+            <Option>texture</Option>
+            <Option>color</Option>
+            <Option>near_alpha_factor</Option>
+            <Option>far_alpha_factor</Option>
+            <Option>radius_factor</Option>
+            <Option>u_offset</Option>
+            <Option>v_offset</Option>
+            <Option>du</Option>
+            <Option>dv</Option>
+            <Option>v_scale</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Effect Jump Effect">
+      <Paths>
+        <Path>fx\jumpeffect.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="JumpGateEffect" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>glow_ring_effect</Option>
+            <Option>glow_ring_hp</Option>
+            <Option>glow_create_time</Option>
+            <Option>jump_out_time</Option>
+            <Option>jump_out_tunnel_time</Option>
+            <Option>jump_in_tunnel_time</Option>
+            <Option>jump_in_time</Option>
+            <Option>kill_time_before_done</Option>
+            <Option>jump_tunnel_effect</Option>
+            <Option>jump_tunnel</Option>
+            <Option>jump_ambient</Option>
+            <Option>jump_background_color</Option>
+          </Options>
+        </Block>
+        <Block name="JumpShipEffect">
+          <Options>
+            <Option>jump_out_effect</Option>
+            <Option>jump_in_effect</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Effect Light Animation">
+      <Paths>
+        <Path>fx\lightanim.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="LightAnim" multiple="true" identifier="name">
+          <Options>
+            <Option>name</Option>
+            <Option multiple="true">frame</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Button Montage">
+      <Paths>
+        <Path>interface\buttonmontage.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Montage" multiple="true">
+          <Options>
+            <Option>size</Option>
+            <Option>num_pages</Option>
+            <Option>texture</Option>
+            <Option>CurrentTargetCorner</Option>
+            <Option>NSArrowBackground</Option>
+            <Option>CurrentTargetArrow</Option>
+            <Option>CurrentTargetArrowHat</Option>
+            <Option>CurrentTargetArrowQuotes</Option>
+            <Option>CurrentTargetArrowOutline</Option>
+            <Option>CurrentTargetHat</Option>
+            <Option>NSTargetHat</Option>
+            <Option>NSTargetArrow</Option>
+            <Option>WaypointTarget</Option>
+            <Option>LootArrow</Option>
+            <Option>WaypointArrow</Option>
+            <Option>PlayerArrow</Option>
+            <Option>LootArrowBackground</Option>
+            <Option>PlayerArrowBackground</Option>
+            <Option>WaypointArrowBackground</Option>
+            <Option>Dummy1</Option>
+            <Option>CurrentTargetTalking</Option>
+            <Option>NSTargetTalking</Option>
+            <Option>PlayerTalking</Option>
+            <Option>interface\HUD\HUD_contactall.3db</Option>
+            <Option>interface\HUD\HUD_contactfrieghter.3db</Option>
+            <Option>interface\HUD\HUD_contactgroup.3db</Option>
+            <Option>interface\HUD\HUD_contactimportant.3db</Option>
+            <Option>interface\HUD\HUD_contactjumpgate.3db</Option>
+            <Option>interface\HUD\HUD_contactlootabledepot.3db</Option>
+            <Option>interface\HUD\HUD_contactnomad.3db</Option>
+            <Option>interface\HUD\HUD_contactplanet.3db</Option>
+            <Option>interface\HUD\HUD_contactship.3db</Option>
+            <Option>interface\HUD\HUD_contactstation.3db</Option>
+            <Option>interface\HUD\HUD_contacttradelane.3db</Option>
+            <Option>interface\HUD\HUD_contacttransport.3db</Option>
+            <Option>interface\HUD\HUD_contactwaypoint.3db</Option>
+            <Option>interface\HUD\HUD_contactweaponplat.3db</Option>
+            <Option>interface\HUD\HUD_formation.3db</Option>
+            <Option>interface\HUD\HUD_nextenemy.3db</Option>
+            <Option>interface\HUD\HUD_playershipinfo.3db</Option>
+            <Option>interface\HUD\HUD_targetedobject.3db</Option>
+            <Option>interface\HUD\HUD_weaponlist.3db</Option>
+            <Option>interface\NeuroNet\Inventory\x.3db</Option>
+            <Option>interface\NeuroNet\icons\NN_Chat.3db</Option>
+            <Option>interface\NeuroNet\icons\NN_Inventory.3db</Option>
+            <Option>interface\NeuroNet\icons\NN_PlayerStatus.3db</Option>
+            <Option>interface\NeuroNet\icons\NN_info.3db</Option>
+            <Option>interface\NeuroNet\icons\NN_request.3db</Option>
+            <Option>interface\NeuroNet\icons\NN_storystar.3db</Option>
+            <Option>interface\hud\HUD_communication.3db</Option>
+            <Option>interface\hud\HUD_contactlist.3db</Option>
+            <Option>interface\hud\HUD_infocard.3db</Option>
+            <Option>interface\hud\HUD_nextsub.3db</Option>
+            <Option>interface\hud\HUD_previoussub.3db</Option>
+            <Option>interface\hud\HUD_repairactivate.3db</Option>
+            <Option>interface\hud\HUD_scanshipinactive.3db</Option>
+            <Option>interface\hud\HUD_shieldgaugeicon.3db</Option>
+            <Option>interface\hud\HUD_tractorbeam2.3db</Option>
+            <Option>interface\hud\HUD_trade.3db</Option>
+            <Option>interface\hud\hud_ShipInfo_button.3db</Option>
+            <Option>interface\hud\hud_ShipTarget.3db</Option>
+            <Option>interface\HUD\HUD_chat.3db</Option>
+            <Option>interface\HUD\HUD_contactbattleship.3db</Option>
+            <Option>interface\HUD\HUD_contactloot.3db</Option>
+            <Option>interface\HUD\HUD_contactotherplayers.3db</Option>
+            <Option>interface\HUD\MNVR_dock.3db</Option>
+            <Option>interface\HUD\MNVR_dock_gray.3db</Option>
+            <Option>interface\HUD\MNVR_formation.3db</Option>
+            <Option>interface\HUD\MNVR_formation_gray.3db</Option>
+            <Option>interface\HUD\MNVR_freeflight.3db</Option>
+            <Option>interface\HUD\MNVR_freeflight_gray.3db</Option>
+            <Option>interface\HUD\MNVR_goto.3db</Option>
+            <Option>interface\HUD\MNVR_goto_gray.3db</Option>
+            <Option>interface\HUD\hud_mnvrwarp.3db</Option>
+            <Option>interface\NeuroNet\icons\NN_Map.3db</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Button Textures">
+      <Paths>
+        <Path>interface\buttontextures.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Texture">
+          <Options>
+            <Option>file</Option>
+            <Option multiple="true">tex_shape</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Hud">
+      <Paths>
+        <Path>interface\hud.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="ContactList">
+          <Options />
+        </Block>
+        <Block name="Core">
+          <Options />
+        </Block>
+        <Block name="CruiseProgress">
+          <Options />
+        </Block>
+        <Block name="DamageIndicator">
+          <Options />
+        </Block>
+        <Block name="HUD">
+          <Options>
+            <Option>shapes</Option>
+          </Options>
+        </Block>
+        <Block name="Maneuvers">
+          <Options>
+            <Option multiple="true">maneuver</Option>
+          </Options>
+        </Block>
+        <Block name="Receiver">
+          <Options>
+            <Option>action</Option>
+            <Option>shut</Option>
+            <Option>open</Option>
+            <Option>delay</Option>
+            <Option>video_fovx</Option>
+            <Option>speaker_rotate</Option>
+            <Option>male_speaker_offset</Option>
+            <Option>female_speaker_offset</Option>
+            <Option>backdrop</Option>
+            <Option>static</Option>
+            <Option>win_pos</Option>
+            <Option>win_size</Option>
+            <Option>btn_pos</Option>
+            <Option>fly_time</Option>
+            <Option>tool_tip_id</Option>
+          </Options>
+        </Block>
+        <Block name="Status">
+          <Options />
+        </Block>
+        <Block name="Steer">
+          <Options>
+            <Option>radius</Option>
+            <Option>range</Option>
+            <Option>color</Option>
+            <Option>size</Option>
+          </Options>
+        </Block>
+        <Block name="Target">
+          <Options />
+        </Block>
+        <Block name="Targetable_Objects">
+          <Options />
+        </Block>
+        <Block name="Waypoint">
+          <Options />
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Infocard Map">
+      <Paths>
+        <Path>interface\infocardmap.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="InfocardMapTable">
+          <Options>
+            <Option multiple="true">Map</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Intro">
+      <Paths>
+        <Path>interface\intro.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Images">
+          <Options>
+            <Option>TgaPath</Option>
+            <Option>ScreenType</Option>
+            <Option>ScreenExit</Option>
+            <Option>ScreenReset</Option>
+            <Option>bDrawScripts</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Key StringArray">
+      <Paths>
+        <Path>interface\keylist.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Group" multiple="true">
+          <Options>
+            <Option>group_num</Option>
+            <Option>name</Option>
+          </Options>
+        </Block>
+        <Block name="key" multiple="true" identifier="id">
+          <Options>
+            <Option>id</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Key Map">
+      <Paths>
+        <Path>interface\keymap.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="KeyCmd" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>state</Option>
+            <Option multiple="true">key</Option>
+          </Options>
+        </Block>
+        <Block name="KeyMap" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option multiple="true">key</Option>
+          </Options>
+        </Block>
+        <Block name="keymap=1.1">
+          <Options />
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Knowledge Map">
+      <Paths>
+        <Path>interface\knowledgemap.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="KnowledgeMapTable" multiple="true">
+          <Options>
+            <Option multiple="true">Map</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Option StringArray">
+      <Paths>
+        <Path>interface\optlist.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Audio">
+          <Options>
+            <Option multiple="true">option</Option>
+          </Options>
+        </Block>
+        <Block name="interface">
+          <Options>
+            <Option multiple="true">option</Option>
+          </Options>
+        </Block>
+        <Block name="video">
+          <Options>
+            <Option multiple="true">option</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Rollover">
+      <Paths>
+        <Path>interface\rollover.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="RolloverTable">
+          <Options>
+            <Option multiple="true">map</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Nav Bar">
+      <Paths>
+        <Path>interface\baseside\navbar.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="BaseFrame">
+          <Options>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>mouse_offset</Option>
+            <Option>no_z_enable</Option>
+            <Option>z_order</Option>
+            <Option>tooltip</Option>
+            <Option multiple="true">subcontrol</Option>
+          </Options>
+        </Block>
+        <Block name="ButtonControl1">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="ButtonControl2">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="ButtonControl3">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="ButtonControl4">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="ButtonControl5">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="NavBar">
+          <Options>
+            <Option>Equipment</Option>
+            <Option>Bar</Option>
+            <Option>Cityscape</Option>
+            <Option>Deck</Option>
+            <Option>IDS_DEALER_FRONT_DESK</Option>
+            <Option>IDS_HOTSPOT_COMMODITYTRADER</Option>
+            <Option>IDS_HOTSPOT_DECK</Option>
+            <Option>IDS_HOTSPOT_LAUNCH</Option>
+            <Option>IDS_HOTSPOT_MISSIONVENDOR</Option>
+            <Option>IDS_HOTSPOT_NEWSVENDOR</Option>
+            <Option>IDS_HOTSPOT_PLANETSCAPE</Option>
+            <Option>IDS_HOTSPOT_EQUIPMENTDEALER</Option>
+            <Option>IDS_HOTSPOT_SHIPDEALER</Option>
+            <Option>IDS_EQUIPMENT_ROOM_LEFT</Option>
+            <Option>IDS_EQUIPMENT_ROOM_RIGHT</Option>
+            <Option>IDS_NN_REPAIR_YOUR_SHIP</Option>
+            <Option>Launch</Option>
+            <Option>Planetscape</Option>
+            <Option>ShipDealer</Option>
+            <Option>Trader</Option>
+          </Options>
+        </Block>
+        <Block name="RoomControl1">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="RoomControl2">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="RoomControl3">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="RoomControl4">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="RoomControl5">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="RoomControl6">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+        <Block name="RoomControl7">
+          <Options>
+            <Option>class_name</Option>
+            <Option>mesh</Option>
+            <Option>offset</Option>
+            <Option>mouse_size</Option>
+            <Option>action_button</Option>
+            <Option>no_color_change</Option>
+            <Option>no_z_enable</Option>
+            <Option>tooltip</Option>
+            <Option>button_sound</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Hud Textures">
+      <Paths>
+        <Path>interface\hud\hud_txm.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Texture">
+          <Options>
+            <Option>file</Option>
+            <Option multiple="true">tex_shape</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface Nav Map Textures">
+      <Paths>
+        <Path>interface\neuronet\navmap\newnavmap\navmaptextures.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Texture">
+          <Options>
+            <Option>file</Option>
+            <Option multiple="true">tex_shape</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Interface UI Textures">
+      <Paths>
+        <Path>interface\ui\uitextures.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Texture">
+          <Options>
+            <Option>file</Option>
+            <Option multiple="true">tex_shape</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Empathy">
+      <Paths>
+        <Path>missions\empathy.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="RepChangeEffects" multiple="true" identifier="group">
+          <Options>
+            <Option>group</Option>
+            <Option multiple="true">event</Option>
+            <Option multiple="true">empathy_rate</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Faction Properties">
+      <Paths>
+        <Path>missions\faction_prop.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="FactionProps" multiple="true" identifier="affiliation">
+          <Options>
+            <Option>affiliation</Option>
+            <Option>legality</Option>
+            <Option>nickname_plurality</Option>
+            <Option>msg_id_prefix</Option>
+            <Option>jump_preference</Option>
+            <Option multiple="true">npc_ship</Option>
+            <Option multiple="true">voice</Option>
+            <Option>mc_costume</Option>
+            <Option multiple="true">space_costume</Option>
+            <Option>firstname_male</Option>
+            <Option>firstname_female</Option>
+            <Option>lastname</Option>
+            <Option>rank_desig</Option>
+            <Option>formation_desig</Option>
+            <Option>large_ship_desig</Option>
+            <Option>large_ship_names</Option>
+            <Option multiple="true">scan_for_cargo</Option>
+            <Option>scan_announce</Option>
+            <Option>scan_chance</Option>
+            <Option multiple="true">formation</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Formations">
+      <Paths>
+        <Path>missions\formations.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Formation" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option multiple="true">pos</Option>
+            <Option>pl_pos</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Loot Properties">
+      <Paths>
+        <Path>missions\lootprops.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="mLootProps" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>drop_properties</Option>
+          </Options>
+        </Block>
+        <Block name="PhantomLoot" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>toughness_range</Option>
+            <Option>percent_chance</Option>
+            <Option>num_to_drop</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Bases">
+      <Paths>
+        <Path>missions\mbases.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="BaseFaction" multiple="true" identifier="faction">
+          <Options>
+            <Option>faction</Option>
+            <Option>weight</Option>
+            <Option>mission_type</Option>
+            <Option multiple="true">npc</Option>
+          </Options>
+        </Block>
+        <Block name="GF_NPC" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>base_appr</Option>
+            <Option>body</Option>
+            <Option>head</Option>
+            <Option>lefthand</Option>
+            <Option>righthand</Option>
+            <Option>individual_name</Option>
+            <Option>affiliation</Option>
+            <Option>voice</Option>
+            <Option>misn</Option>
+            <Option>room</Option>
+            <Option multiple="true">bribe</Option>
+            <Option multiple="true">rumor</Option>
+            <Option parent="rumor">rumorknowdb</Option>
+            <Option multiple="true">rumor_type2</Option>
+            <Option multiple="true">know</Option>
+            <Option parent="know">knowdb</Option>
+            <Option>accessory</Option>
+          </Options>
+        </Block>
+        <Block name="MBase" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>local_faction</Option>
+            <Option>diff</Option>
+            <Option>msg_id_prefix</Option>
+          </Options>
+        </Block>
+        <Block name="MRoom" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>character_density</Option>
+            <Option multiple="true">fixture</Option>
+          </Options>
+        </Block>
+        <Block name="MVendor" multiple="true">
+          <Options>
+            <Option>num_offers</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission News">
+      <Paths>
+        <Path>missions\news.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="NewsItem" multiple="true" identifier="rank">
+          <Options>
+            <Option>rank</Option>
+            <Option>autoselect</Option>
+            <Option>icon</Option>
+            <Option>logo</Option>
+            <Option>category</Option>
+            <Option>headline</Option>
+            <Option>text</Option>
+            <Option multiple="true">base</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Npc Ships">
+      <Paths>
+        <Path>missions\npcships.ini</Path>
+        <Path>missions\*\npcships.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="NPCShipArch" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>loadout</Option>
+            <Option>level</Option>
+            <Option>ship_archetype</Option>
+            <Option>pilot</Option>
+            <Option>state_graph</Option>
+            <Option>npc_class</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Pilots">
+      <Paths>
+        <Path>missions\pilots*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="BuzzHeadTowardBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>buzz_min_distance_to_head_toward</Option>
+            <Option>buzz_min_distance_to_head_toward_variance_percent</Option>
+            <Option>buzz_max_time_to_head_away</Option>
+            <Option>buzz_head_toward_engine_throttle</Option>
+            <Option>buzz_head_toward_turn_throttle</Option>
+            <Option>buzz_head_toward_roll_throttle</Option>
+            <Option>buzz_head_toward_roll_flip_direction</Option>
+            <Option>buzz_slide_throttle</Option>
+            <Option>buzz_slide_interval_time</Option>
+            <Option>buzz_slide_interval_time_variance_percent</Option>
+            <Option>buzz_dodge_turn_throttle</Option>
+            <Option>buzz_dodge_cone_angle</Option>
+            <Option>buzz_dodge_cone_angle_variance_percent</Option>
+            <Option>buzz_dodge_waggle_axis_cone_angle</Option>
+            <Option>buzz_dodge_roll_angle</Option>
+            <Option>buzz_dodge_interval_time</Option>
+            <Option>buzz_dodge_interval_time_variance_percent</Option>
+            <Option multiple="true">buzz_dodge_direction_weight</Option>
+            <Option multiple="true">buzz_head_toward_style_weight</Option>
+          </Options>
+        </Block>
+        <Block name="BuzzPassByBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>buzz_distance_to_pass_by</Option>
+            <Option>buzz_pass_by_time</Option>
+            <Option>buzz_break_direction_cone_angle</Option>
+            <Option>buzz_break_turn_throttle</Option>
+            <Option>buzz_pass_by_roll_throttle</Option>
+            <Option>buzz_drop_bomb_on_pass_by</Option>
+            <Option multiple="true">buzz_break_direction_weight</Option>
+            <Option multiple="true">buzz_pass_by_style_weight</Option>
+          </Options>
+        </Block>
+        <Block name="CountermeasureBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>countermeasure_active_time</Option>
+            <Option>countermeasure_unactive_time</Option>
+          </Options>
+        </Block>
+        <Block name="DamageReactionBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>evade_break_damage_trigger_percent</Option>
+            <Option>evade_dodge_more_damage_trigger_percent</Option>
+            <Option>engine_kill_face_damage_trigger_percent</Option>
+            <Option>engine_kill_face_damage_trigger_time</Option>
+            <Option>roll_damage_trigger_percent</Option>
+            <Option>roll_damage_trigger_time</Option>
+            <Option>afterburner_damage_trigger_percent</Option>
+            <Option>afterburner_damage_trigger_time</Option>
+            <Option>brake_reverse_damage_trigger_percent</Option>
+            <Option>drop_mines_damage_trigger_percent</Option>
+            <Option>drop_mines_damage_trigger_time</Option>
+            <Option>fire_guns_damage_trigger_percent</Option>
+            <Option>fire_guns_damage_trigger_time</Option>
+            <Option>fire_missiles_damage_trigger_percent</Option>
+            <Option>fire_missiles_damage_trigger_time</Option>
+          </Options>
+        </Block>
+        <Block name="EngineKillBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>engine_kill_search_time</Option>
+            <Option>engine_kill_face_time</Option>
+            <Option>engine_kill_use_afterburner</Option>
+            <Option>engine_kill_afterburner_time</Option>
+            <Option>engine_kill_max_target_distance</Option>
+          </Options>
+        </Block>
+        <Block name="EvadeBreakBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>evade_break_roll_throttle</Option>
+            <Option>evade_break_time</Option>
+            <Option>evade_break_interval_time</Option>
+            <Option>evade_break_afterburner_delay</Option>
+            <Option>evade_break_afterburner_delay_variance_percent</Option>
+            <Option>evade_break_attempt_reverse_time</Option>
+            <Option>evade_break_reverse_distance</Option>
+            <Option>evade_break_turn_throttle</Option>
+            <Option multiple="true">evade_break_direction_weight</Option>
+            <Option multiple="true">evade_break_style_weight</Option>
+          </Options>
+        </Block>
+        <Block name="EvadeDodgeBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>evade_dodge_style_weight</Option>
+            <Option>evade_dodge_cone_angle</Option>
+            <Option>evade_dodge_interval_time</Option>
+            <Option>evade_dodge_time</Option>
+            <Option>evade_dodge_distance</Option>
+            <Option>evade_activate_range</Option>
+            <Option>evade_dodge_roll_angle</Option>
+            <Option>evade_dodge_waggle_axis_cone_angle</Option>
+            <Option>evade_dodge_slide_throttle</Option>
+            <Option>evade_dodge_turn_throttle</Option>
+            <Option>evade_dodge_corkscrew_turn_throttle</Option>
+            <Option>evade_dodge_corkscrew_roll_throttle</Option>
+            <Option>evade_dodge_corkscrew_roll_flip_direction</Option>
+            <Option>evade_dodge_interval_time_variance_percent</Option>
+            <Option>evade_dodge_cone_angle_variance_percent</Option>
+            <Option multiple="true">evade_dodge_direction_weight</Option>
+          </Options>
+        </Block>
+        <Block name="FormationBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>force_attack_formation_active_time</Option>
+            <Option>force_attack_formation_unactive_time</Option>
+            <Option>break_formation_damage_trigger_percent</Option>
+            <Option>break_formation_damage_trigger_time</Option>
+            <Option>break_formation_missile_reaction_time</Option>
+            <Option>break_apart_formation_missile_reaction_time</Option>
+            <Option>break_apart_formation_on_evade_break</Option>
+            <Option>break_formation_on_evade_break_time</Option>
+            <Option>formation_exit_top_turn_break_away_throttle</Option>
+            <Option>formation_exit_roll_outrun_throttle</Option>
+            <Option>formation_exit_max_time</Option>
+          </Options>
+        </Block>
+        <Block name="GunBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>gun_fire_interval_time</Option>
+            <Option>gun_fire_interval_variance_percent</Option>
+            <Option>gun_fire_burst_interval_time</Option>
+            <Option>gun_fire_burst_interval_variance_percent</Option>
+            <Option>gun_fire_no_burst_interval_time</Option>
+            <Option>gun_fire_accuracy_cone_angle</Option>
+            <Option>gun_fire_accuracy_power</Option>
+            <Option>gun_range_threshold</Option>
+            <Option>gun_target_point_switch_time</Option>
+            <Option>fire_style</Option>
+            <Option>auto_turret_interval_time</Option>
+            <Option>auto_turret_burst_interval_time</Option>
+            <Option>auto_turret_no_burst_interval_time</Option>
+            <Option>auto_turret_burst_interval_variance_percent</Option>
+            <Option>gun_range_threshold_variance_percent</Option>
+            <Option>gun_fire_accuracy_power_npc</Option>
+          </Options>
+        </Block>
+        <Block name="JobBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>wait_for_leader_target</Option>
+            <Option>maximum_leader_target_distance</Option>
+            <Option>flee_when_leader_flees_style</Option>
+            <Option>scene_toughness_threshold</Option>
+            <Option>flee_scene_threat_style</Option>
+            <Option>flee_when_hull_damaged_percent</Option>
+            <Option>flee_no_weapons_style</Option>
+            <Option>loot_flee_threshold</Option>
+            <Option>attack_subtarget_order</Option>
+            <Option>field_targeting</Option>
+            <Option>loot_preference</Option>
+            <Option>force_attack_formation</Option>
+            <Option>combat_drift_distance</Option>
+            <Option multiple="true">attack_preference</Option>
+            <Option>allow_player_targeting</Option>
+          </Options>
+        </Block>
+        <Block name="MineBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>mine_launch_interval</Option>
+            <Option>mine_launch_cone_angle</Option>
+            <Option>mine_launch_range</Option>
+          </Options>
+        </Block>
+        <Block name="MissileBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>missile_launch_interval_time</Option>
+            <Option>missile_launch_interval_variance_percent</Option>
+            <Option>missile_launch_range</Option>
+            <Option>missile_launch_cone_angle</Option>
+            <Option>missile_launch_allow_out_of_range</Option>
+          </Options>
+        </Block>
+        <Block name="MissileReactionBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>evade_missile_distance</Option>
+            <Option>evade_break_missile_reaction_time</Option>
+            <Option>evade_slide_missile_reaction_time</Option>
+            <Option>evade_afterburn_missile_reaction_time</Option>
+          </Options>
+        </Block>
+        <Block name="Pilot" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>inherit</Option>
+            <Option>gun_id</Option>
+            <Option>missile_id</Option>
+            <Option>evade_dodge_id</Option>
+            <Option>evade_break_id</Option>
+            <Option>buzz_head_toward_id</Option>
+            <Option>buzz_pass_by_id</Option>
+            <Option>trail_id</Option>
+            <Option>strafe_id</Option>
+            <Option>engine_kill_id</Option>
+            <Option>mine_id</Option>
+            <Option>countermeasure_id</Option>
+            <Option>damage_reaction_id</Option>
+            <Option>missile_reaction_id</Option>
+            <Option>formation_id</Option>
+            <Option>repair_id</Option>
+            <Option>job_id</Option>
+          </Options>
+        </Block>
+        <Block name="RepairBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>use_shield_repair_pre_delay</Option>
+            <Option>use_shield_repair_post_delay</Option>
+            <Option>use_shield_repair_at_damage_percent</Option>
+            <Option>use_hull_repair_pre_delay</Option>
+            <Option>use_hull_repair_post_delay</Option>
+            <Option>use_hull_repair_at_damage_percent</Option>
+          </Options>
+        </Block>
+        <Block name="StrafeBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>strafe_turn_throttle</Option>
+            <Option>strafe_run_away_distance</Option>
+            <Option>strafe_attack_throttle</Option>
+          </Options>
+        </Block>
+        <Block name="TrailBlock" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>trail_lock_cone_angle</Option>
+            <Option>trail_break_time</Option>
+            <Option>trail_min_no_lock_time</Option>
+            <Option>trail_break_roll_throttle</Option>
+            <Option>trail_break_afterburner</Option>
+            <Option>trail_max_turn_throttle</Option>
+            <Option>trail_distance</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Player Toughness">
+      <Paths>
+        <Path>missions\ptough.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="PlayerToughnessScale">
+          <Options>
+            <Option multiple="true">ptough_graph_pt</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Rank Diff">
+      <Paths>
+        <Path>missions\rankdiff.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="RankDiffDB">
+          <Options>
+            <Option multiple="true">rank_diff</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Ship Classes">
+      <Paths>
+        <Path>missions\shipclasses.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="ShipClass" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option multiple="true">member</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Specific Npc">
+      <Paths>
+        <Path>missions\specific_npc.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="NPC" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>base_appr</Option>
+            <Option>individual_name</Option>
+            <Option>voice</Option>
+            <Option>affiliation</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Voice Properties">
+      <Paths>
+        <Path>missions\voice_properties.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="mVoiceProp" multiple="true" identifier="voice">
+          <Options>
+            <Option>voice</Option>
+            <Option multiple="true">permutation_count</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Encounters">
+      <Paths>
+        <Path>missions\encounters\*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Creation">
+          <Options>
+            <Option multiple="true">permutation</Option>
+          </Options>
+        </Block>
+        <Block name="EncounterFormation" multiple="true">
+          <Options>
+            <Option multiple="true">ship_by_class</Option>
+            <Option parent="ship_by_class">pilot_job</Option>
+            <Option multiple="true">make_class</Option><!--actual parent="ship_by_class"-->
+            <Option>formation_by_class</Option>
+            <Option>behavior</Option>
+            <Option>arrival</Option>
+            <Option>allow_simultaneous_creation</Option>
+            <Option>zone_creation_distance</Option>
+            <Option>times_to_create</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission Nrml">
+      <Paths>
+        <Path>missions\*\*_nrml.ini</Path>
+        <Path>missions\*\*_offer.ini</Path>
+        <Path>missions\*\*_reoffer.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Char" multiple="true" identifier="actor">
+          <Options>
+            <Option>npc</Option>
+            <Option>actor</Option>
+            <Option>fidget</Option>
+            <Option>spot</Option>
+          </Options>
+        </Block>
+        <Block name="CharacterEncounter">
+          <Options>
+            <Option>Location</Option>
+            <Option>start_room</Option>
+            <Option>action</Option>
+            <Option>offer</Option>
+            <Option>accept</Option>
+            <Option>decline</Option>
+            <Option>reject</Option>
+            <Option>decision</Option>
+            <Option>autoplay</Option>
+            <Option>mission_text_id</Option>
+            <Option>nooffer_text_id</Option>
+            <Option>relocate_player</Option>
+          </Options>
+        </Block>
+        <Block name="Reserve">
+          <Options>
+            <Option multiple="true">spot</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Mission">
+      <Paths>
+        <Path>missions\*\*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Dialog" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>system</Option>
+            <Option multiple="true">line</Option>
+          </Options>
+        </Block>
+        <Block name="MetaBehavior" multiple="true" identifier="nickname">
+          <Options>
+            <Option>MB_GotoGuide</Option>
+            <Option>nickname</Option>
+          </Options>
+        </Block>
+        <Block name="Mission">
+          <Options>
+            <Option>mission_title</Option>
+            <Option>mission_offer</Option>
+            <Option>reward</Option>
+            <Option>npc_ship_file</Option>
+          </Options>
+        </Block>
+        <Block name="MsnFormation" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>position</Option>
+            <Option>orientation</Option>
+            <Option>formation</Option>
+            <Option multiple="true">ship</Option>
+            <Option>rel_pos</Option>
+          </Options>
+        </Block>
+        <Block name="MsnLoot">
+          <Options>
+            <Option>nickname</Option>
+            <Option>archetype</Option>
+            <Option>string_id</Option>
+            <Option>rel_pos_obj</Option>
+            <Option>rel_pos_offset</Option>
+            <Option>velocity</Option>
+            <Option>equip_amount</Option>
+            <Option>health</Option>
+            <Option>Can_Jettison</Option>
+            <Option>position</Option>
+          </Options>
+        </Block>
+        <Block name="MsnRandEnc" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>encounter_type</Option>
+            <Option>attacker_rep_name</Option>
+            <Option>target_ship_name</Option>
+            <Option>activation_type</Option>
+            <Option>formation</Option>
+            <Option>num_forms</Option>
+            <Option>label</Option>
+          </Options>
+        </Block>
+        <Block name="MsnShip" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>NPC</Option>
+            <Option>position</Option>
+            <Option multiple="true">label</Option>
+            <Option>orientation</Option>
+            <Option>random_name</Option>
+            <Option>radius</Option>
+            <Option>arrival_obj</Option>
+            <Option>rel_pos</Option>
+            <Option>jumper</Option>
+            <Option>init_objectives</Option>
+            <Option multiple="true">cargo</Option>
+            <Option>system</Option>
+          </Options>
+        </Block>
+        <Block name="MsnSolar" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>faction</Option>
+            <Option>system</Option>
+            <Option>position</Option>
+            <Option>orientation</Option>
+            <Option>archetype</Option>
+            <Option>base</Option>
+            <Option multiple="true">label</Option>
+            <Option>radius</Option>
+            <Option>string_id</Option>
+            <Option>loadout</Option>
+            <Option>pilot</Option>
+            <Option>visit</Option>
+            <Option>voice</Option>
+            <Option>costume</Option>
+          </Options>
+        </Block>
+        <Block name="NNObjective" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>state</Option>
+            <Option>type</Option>
+          </Options>
+        </Block>
+        <Block name="NPC" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>individual_name</Option>
+            <Option>affiliation</Option>
+            <Option>npc_ship_arch</Option>
+            <Option>voice</Option>
+            <Option>space_costume</Option>
+          </Options>
+        </Block>
+        <Block name="ObjList" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option multiple="true">Avoidance</Option>
+            <Option>Delay</Option>
+            <Option multiple="true">GotoVec</Option>
+            <Option>SetLifetime</Option>
+            <Option multiple="true">GotoSpline</Option>
+            <Option>MakeNewFormation</Option>
+            <Option>BreakFormation</Option>
+            <Option>Follow</Option>
+            <Option multiple="true">StayInRange</Option>
+            <Option multiple="true">GotoShip</Option>
+            <Option>SetPriority</Option>
+            <Option multiple="true">Dock</Option>
+            <Option>system</Option>
+            <Option>Idle</Option>
+            <Option>FollowPlayer</Option>
+            <Option>StayOutOfRange</Option>
+          </Options>
+        </Block>
+        <Block name="Trigger" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>system</Option>
+            <Option>InitState</Option>
+            <Option>repeatable</Option>
+            <Option>Cnd_BaseEnter</Option>
+            <Option>Cnd_BaseExit</Option>
+            <Option>Cnd_CargoScanned</Option>
+            <Option>Cnd_CharSelect</Option>
+            <Option>Cnd_CommComplete</Option>
+            <Option>Cnd_Destroyed</Option>
+            <Option>Cnd_DistCircle</Option>
+            <Option>Cnd_DistShip</Option>
+            <Option>Cnd_DistVec</Option>
+            <Option>Cnd_DistVecLbL</Option>
+            <Option>Cnd_EncLaunched</Option>
+            <Option>Cnd_HasMsn</Option>
+            <Option>Cnd_HealthDec</Option>
+            <Option>Cnd_InSpace</Option>
+            <Option>Cnd_InTradelane</Option>
+            <Option>Cnd_InZone</Option>
+            <Option>Cnd_JumpInComplete</Option>
+            <Option>Cnd_LaunchComplete</Option>
+            <Option>Cnd_LocEnter</Option>
+            <Option>Cnd_LocExit</Option>
+            <Option>Cnd_LootAcquired</Option>
+            <Option>Cnd_MsnResponse</Option>
+            <Option>Cnd_NPCSystemEnter</Option>
+            <Option>Cnd_PlayerLaunch</Option>
+            <Option>Cnd_PlayerManeuver</Option>
+            <Option>Cnd_PopUpDialog</Option>
+            <Option>Cnd_ProjHit</Option>
+            <Option>Cnd_ProjHitShipToLbl</Option>
+            <Option>Cnd_RTCDone</Option>
+            <Option>Cnd_SpaceEnter</Option>
+            <Option>Cnd_SpaceExit</Option>
+            <Option>Cnd_SystemEnter</Option>
+            <Option>Cnd_SystemExit</Option>
+            <Option>Cnd_TetherBroke</Option>
+            <Option>Cnd_Timer</Option>
+            <Option>Cnd_TLEntered</Option>
+            <Option>Cnd_TLExited</Option>
+            <Option>Cnd_True</Option>
+            <Option>Cnd_WatchTrigger</Option>
+            <Option>Cnd_WatchVibe</Option>
+            <Option multiple="true">Act_ActTrig</Option>
+            <Option>Act_AddAmbient</Option>
+            <Option>Act_AddRTC</Option>
+            <Option>Act_AdjAcct</Option>
+            <Option multiple="true">Act_AdjHealth</Option>
+            <Option>Act_CallThorn</Option>
+            <Option>Act_ChangeState</Option>
+            <Option>Act_Cloak</Option>
+            <Option multiple="true">Act_DeactTrig</Option>
+            <Option>Act_DebugMsg</Option>
+            <Option>Act_Destroy</Option>
+            <Option multiple="true">Act_DisableEnc</Option>
+            <Option>Act_DisableFriendlyFire</Option>
+            <Option>Act_DisableTradelane</Option>
+            <Option>Act_DockRequest</Option>
+            <Option>Act_EnableEnc</Option>
+            <Option multiple="true">Act_EnableManeuver</Option>
+            <Option>Act_EtherComm</Option>
+            <Option>Act_ForceLand</Option>
+            <Option>Act_GCSClamp</Option>
+            <Option>Act_GiveMB</Option>
+            <Option>Act_GiveNNObjs</Option>
+            <Option multiple="true">Act_GiveObjList</Option>
+            <Option>Act_HostileClamp</Option>
+            <Option multiple="true">Act_Invulnerable</Option>
+            <Option multiple="true">Act_Jumper</Option>
+            <Option multiple="true">Act_LightFuse</Option>
+            <Option multiple="true">Act_LockDock</Option>
+            <Option>Act_LockManeuvers</Option>
+            <Option multiple="true">Act_MarkObj</Option>
+            <Option>Act_MovePlayer</Option>
+            <Option>Act_NagClamp</Option>
+            <Option>Act_NagDistLeaving</Option>
+            <Option>Act_NagDistTowards</Option>
+            <Option>Act_NagGreet</Option>
+            <Option>Act_NagOff</Option>
+            <Option>Act_NNIds</Option>
+            <Option>Act_NNPath</Option>
+            <Option>Act_PlayerCanDock</Option>
+            <Option>Act_PlayerCanTradelane</Option>
+            <Option>Act_PlayerEnemyClamp</Option>
+            <Option>Act_PlayMusic</Option>
+            <Option>Act_PlaySoundEffect</Option>
+            <Option>Act_PObjIdle</Option>
+            <Option>Act_Popupdialog</Option>
+            <Option>Act_RandomPop</Option>
+            <Option>Act_RandomPopSphere</Option>
+            <Option>Act_RelocateShip</Option>
+            <Option>Act_RemoveAmbient</Option>
+            <Option>Act_RemoveCargo</Option>
+            <Option>Act_RemoveRTC</Option>
+            <Option>Act_RevertCam</Option>
+            <Option>Act_RpopAttClamp</Option>
+            <Option>Act_RpopTLAttacksEnabled</Option>
+            <Option>Act_Save</Option>
+            <Option>Act_SendComm</Option>
+            <Option>Act_SetInitialPlayerPos</Option>
+            <Option multiple="true">Act_SetLifeTime</Option>
+            <Option>Act_SetNNHidden</Option>
+            <Option>Act_SetNNObj</Option>
+            <Option multiple="true">Act_SetNNState</Option>
+            <Option>Act_SetOffer</Option>
+            <Option>Act_SetOrient</Option>
+            <Option>Act_SetPriority</Option>
+            <Option multiple="true">Act_SetRep</Option>
+            <Option>Act_SetShipAndLoadout</Option>
+            <Option>Act_SetTitle</Option>
+            <Option multiple="true">Act_SetVibe</Option>
+            <Option multiple="true">Act_SetVibeLbl</Option>
+            <Option multiple="true">Act_SetVibeLblToShip</Option>
+            <Option>Act_SetVibeOfferBaseHack</Option>
+            <Option multiple="true">Act_SetVibeShiptoLbl</Option>
+            <Option multiple="true">Act_SpawnFormation</Option>
+            <Option>Act_SpawnLoot</Option>
+            <Option multiple="true">Act_SpawnShip</Option>
+            <Option multiple="true">Act_SpawnSolar</Option>
+            <Option>Act_StartDialog</Option>
+            <Option>Act_StaticCam</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Randommission Diff to Money">
+      <Paths>
+        <Path>randommissions\diff2money.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Diff2Money">
+          <Options>
+            <Option multiple="true">Diff2Money</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Randommission Killable Solars">
+      <Paths>
+        <Path>randommissions\killablesolars.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="KillableSolar" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>solar_type</Option>
+            <Option>string_id</Option>
+            <Option>faction</Option>
+            <Option>archetype</Option>
+            <Option>only_allowed_in_zone_type</Option>
+            <Option>loadout</Option>
+            <Option>hitpoints</Option>
+            <Option>difficulty</Option>
+            <Option>pilot_choices</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Randommission Npc Rank to Diff">
+      <Paths>
+        <Path>randommissions\npcranktodiff.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="RankAndFormationSizeToDifficulty">
+          <Options>
+            <Option multiple="true">NpcRank</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Randommission Loot Info">
+      <Paths>
+        <Path>randommissions\rmlootinfo.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Global">
+          <Options>
+            <Option>BonusLootDropChance</Option>
+          </Options>
+        </Block>
+        <Block name="RMBonusLoot" multiple="true" identifier="archetype">
+          <Options>
+            <Option>archetype</Option>
+            <Option>num_to_drop</Option>
+            <Option>faction</Option>
+            <Option>difficulty_range</Option>
+            <Option>weight</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Randommission Solar Formations">
+      <Paths>
+        <Path>randommissions\solarformations.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="SolarFormation" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>type</Option>
+            <Option multiple="true">pos</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Randommission Vignette Critical Loot">
+      <Paths>
+        <Path>randommissions\vignettecriticalloot.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="critical_loot" multiple="true" identifier="archetype">
+          <Options>
+            <Option>faction</Option>
+            <Option>archetype</Option>
+            <Option>name</Option>
+            <Option>type</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Randommission Vignette Parameters">
+      <Paths>
+        <Path>randommissions\vignetteparams.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="DataNode" multiple="true" identifier="node_id">
+          <Options>
+            <Option>node_id</Option>
+            <Option>Weight</Option>
+            <Option>Offer_group</Option>
+            <Option>Failure_text</Option>
+            <Option>Reward_text</Option>
+            <Option multiple="true">offer_text</Option>
+            <Option multiple="true">objective_text</Option>
+            <Option multiple="true">comm_sequence</Option>
+            <Option>Implemented</Option>
+            <Option>Hostile_group</Option>
+            <Option>Allowable_zone_types</Option>
+            <Option>Difficulty</Option>
+            <Option>child_node</Option>
+          </Options>
+        </Block>
+        <Block name="DecisionNode" multiple="true" identifier="node_id">
+          <Options>
+            <Option>node_id</Option>
+            <Option>nickname</Option>
+            <Option multiple="true">child_node</Option>
+          </Options>
+        </Block>
+        <Block name="DocumentationNode" multiple="true" identifier="node_id">
+          <Options>
+            <Option>node_id</Option>
+            <Option>documentation</Option>
+            <Option>child_node</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Scripts Rtc Slider">
+      <Paths>
+        <Path>scripts\rtcslider.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="RtcSlider">
+          <Options>
+            <Option multiple="true">set</Option>
+            <Option multiple="true" parent="set">set_less</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Scripts GCS Exclusion">
+      <Paths>
+        <Path>scripts\gcs\gcsexcl.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="GCS_Exclusions">
+          <Options>
+            <Option multiple="true">voice</Option>
+            <Option multiple="true">script</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Scripts Generic">
+      <Paths>
+        <Path>scripts\gcs\genericscripts.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="GenericScripts">
+          <Options>
+            <Option multiple="true">set_segment</Option>
+            <Option multiple="true">set_gender</Option>
+            <Option multiple="true">set_posture</Option>
+            <Option multiple="true">script</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Loadouts">
+      <Paths>
+        <Path>solar\loadouts.ini</Path>
+        <Path>ships\loadouts_special.ini</Path>
+        <Path>ships\loadouts_utility.ini</Path>
+        <Path>ships\loadouts.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Loadout" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>archetype</Option>
+            <Option multiple="true">equip</Option>
+            <Option multiple="true">cargo</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Ship Archetype">
+      <Paths>
+        <Path>ships\*shiparch.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="CollisionGroup" multiple="true" identifier="obj">
+          <Options>
+            <Option>obj</Option>
+            <Option>separable</Option>
+            <Option>parent_impulse</Option>
+            <Option>child_impulse</Option>
+            <Option>debris_type</Option>
+            <Option>dmg_hp</Option>
+            <Option>dmg_obj</Option>
+            <Option>group_dmg_hp</Option>
+            <Option>group_dmg_obj</Option>
+            <Option>separation_explosion</Option>
+            <Option>mass</Option>
+            <Option>type</Option>
+            <Option>hit_pts</Option>
+            <Option>root_health_proxy</Option>
+            <Option multiple="true">fuse</Option>
+          </Options>
+        </Block>
+        <Block name="Ship" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>ids_info1</Option>
+            <Option>ids_info2</Option>
+            <Option>ids_info3</Option>
+            <Option>ship_class</Option>
+            <Option>LODranges</Option>
+            <Option>msg_id_prefix</Option>
+            <Option>mission_property</Option>
+            <Option>type</Option>
+            <Option>DA_archetype</Option>
+            <Option multiple="true">material_library</Option>
+            <Option>envmap_material</Option>
+            <Option>nomad</Option>
+            <Option>linear_drag</Option>
+            <Option>mass</Option>
+            <Option>hold_size</Option>
+            <Option multiple="true">fuse</Option>
+            <Option>max_bank_angle</Option>
+            <Option>camera_offset</Option>
+            <Option>camera_angular_acceleration</Option>
+            <Option>camera_horizontal_turn_angle</Option>
+            <Option>camera_vertical_turn_up_angle</Option>
+            <Option>camera_vertical_turn_down_angle</Option>
+            <Option>camera_turn_look_ahead_slerp_amount</Option>
+            <Option>nanobot_limit</Option>
+            <Option>shield_battery_limit</Option>
+            <Option>hit_pts</Option>
+            <Option>cockpit</Option>
+            <Option>pilot_mesh</Option>
+            <Option>explosion_arch</Option>
+            <Option multiple="true">surface_hit_effects</Option>
+            <Option>steering_torque</Option>
+            <Option>angular_drag</Option>
+            <Option>rotation_inertia</Option>
+            <Option>nudge_force</Option>
+            <Option>strafe_force</Option>
+            <Option>strafe_power_usage</Option>
+            <Option>bay_door_anim</Option>
+            <Option>bay_doors_open_snd</Option>
+            <Option>bay_doors_close_snd</Option>
+            <Option>HP_bay_surface</Option>
+            <Option>HP_bay_external</Option>
+            <Option>HP_tractor_source</Option>
+            <Option>num_exhaust_nozzles</Option>
+            <Option>shield_link</Option>
+            <Option multiple="true">hp_type</Option>
+          </Options>
+        </Block>
+        <Block name="Simple" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>LODranges</Option>
+            <Option>MinSpecLOD</Option>
+            <Option>mass</Option>
+            <Option>hit_pts</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Solar Asteroid Archetype">
+      <Paths>
+        <Path>solar\asteroidarch.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Asteroid" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>explosion_arch</Option>
+            <Option>recharge_time</Option>
+          </Options>
+        </Block>
+        <Block name="AsteroidMine" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>explosion_arch</Option>
+            <Option>explosion_impulse</Option>
+            <Option>detect_radius</Option>
+            <Option>explosion_offset</Option>
+            <Option>recharge_time</Option>
+            <Option>phantom_physics</Option>
+          </Options>
+        </Block>
+        <Block name="DynamicAsteroid" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>DA_archetype</Option>
+            <Option>material_library</Option>
+            <Option>explosion_arch</Option>
+            <Option>particle_effect</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Solar Archetype">
+      <Paths>
+        <Path>solar\solararch.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="CollisionGroup" multiple="true" identifier="obj">
+          <Options>
+            <Option>obj</Option>
+            <Option>dmg_hp</Option>
+            <Option>dmg_obj</Option>
+            <Option>separable</Option>
+            <Option>parent_impulse</Option>
+            <Option>child_impulse</Option>
+            <Option>debris_type</Option>
+            <Option>mass</Option>
+            <Option>fuse</Option>
+            <Option>group_dmg_hp</Option>
+            <Option>group_dmg_obj</Option>
+            <Option>hit_pts</Option>
+            <Option>root_health_proxy</Option>
+          </Options>
+        </Block>
+        <Block name="Solar" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>ids_name</Option>
+            <Option>ids_info</Option>
+            <Option>type</Option>
+            <Option>animated_textures</Option>
+            <Option>DA_archetype</Option>
+            <Option multiple="true">material_library</Option>
+            <Option>distance_render</Option>
+            <Option>envmap_material</Option>
+            <Option>LODranges</Option>
+            <Option>surface_hit_effects</Option>
+            <Option>mass</Option>
+            <Option>loadout</Option>
+            <Option>nomad</Option>
+            <Option>open_anim</Option>
+            <Option>open_sound</Option>
+            <Option>close_sound</Option>
+            <Option multiple="true">docking_sphere</Option>
+            <Option>docking_camera</Option>
+            <Option>jump_out_hp</Option>
+            <Option>solar_radius</Option>
+            <Option>shape_name</Option>
+            <Option>shield_link</Option>
+            <Option>explosion_arch</Option>
+            <Option>destructible</Option>
+            <Option>hit_pts</Option>
+            <Option multiple="true">fuse</Option>
+            <Option>phantom_physics</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Solar Star Archetype">
+      <Paths>
+        <Path>solar\stararch.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="lens_flare" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>shape</Option>
+            <Option>min_radius</Option>
+            <Option>max_radius</Option>
+            <Option multiple="true">bead</Option>
+          </Options>
+        </Block>
+        <Block name="lens_glow" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>shape</Option>
+            <Option>radius_scale</Option>
+            <Option>inner_color</Option>
+            <Option>outer_color</Option>
+            <Option>glow_fade_in_seconds</Option>
+            <Option>glow_fade_out_seconds</Option>
+          </Options>
+        </Block>
+        <Block name="spines" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>radius_scale</Option>
+            <Option>shape</Option>
+            <Option>min_radius</Option>
+            <Option>max_radius</Option>
+            <Option multiple="true">spine</Option>
+          </Options>
+        </Block>
+        <Block name="star" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>star_glow</Option>
+            <Option>star_center</Option>
+            <Option>lens_flare</Option>
+            <Option>lens_glow</Option>
+            <Option>spines</Option>
+            <Option>intensity_fade_in</Option>
+            <Option>intensity_fade_out</Option>
+            <Option>zone_occlusion_fade_in</Option>
+            <Option>zone_occlusion_fade_out</Option>
+            <Option>radius</Option>
+          </Options>
+        </Block>
+        <Block name="star_glow" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>shape</Option>
+            <Option>scale</Option>
+            <Option>inner_color</Option>
+            <Option>outer_color</Option>
+          </Options>
+        </Block>
+        <Block name="Texture">
+          <Options>
+            <Option>file</Option>
+            <Option multiple="true">tex_shape</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Solar Asteroids">
+      <Paths>
+        <Path>solar\asteroids\*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="AsteroidBillboards">
+          <Options>
+            <Option>count</Option>
+            <Option>start_dist</Option>
+            <Option>fade_dist_percent</Option>
+            <Option>shape</Option>
+            <Option>color_shift</Option>
+            <Option>ambient_intensity</Option>
+            <Option>size</Option>
+          </Options>
+        </Block>
+        <Block name="Band">
+          <Options>
+            <Option>render_parts</Option>
+            <Option>shape</Option>
+            <Option>height</Option>
+            <Option>offset_dist</Option>
+            <Option>fade</Option>
+            <Option>texture_aspect</Option>
+            <Option>color_shift</Option>
+            <Option>ambient_intensity</Option>
+            <Option>vert_increase</Option>
+          </Options>
+        </Block>
+        <Block name="Cube">
+          <Options>
+            <Option>xaxis_rotation</Option>
+            <Option>yaxis_rotation</Option>
+            <Option>zaxis_rotation</Option>
+            <Option multiple="true">asteroid</Option>
+          </Options>
+        </Block>
+        <Block name="DynamicAsteroids">
+          <Options>
+            <Option>asteroid</Option>
+            <Option>count</Option>
+            <Option>placement_radius</Option>
+            <Option>placement_offset</Option>
+            <Option>max_velocity</Option>
+            <Option>max_angular_velocity</Option>
+            <Option>color_shift</Option>
+          </Options>
+        </Block>
+        <Block name="Exclusion Zones">
+          <Options>
+            <Option multiple="true" renameFrom="exclude">exclusion</Option>
+            <Option parent="exclusion">exclude_billboards</Option>
+            <Option multiple="true">exclude_dynamic_asteroids</Option><!--actual parent="exclusion"-->
+            <Option>empty_cube_frequency</Option><!--actual parent="exclusion"-->
+            <Option>billboard_count</Option><!--actual parent="exclusion"-->
+          </Options>
+        </Block>
+        <Block name="ExclusionBand">
+          <Options>
+            <Option>zone</Option>
+            <Option>render_parts</Option>
+            <Option>shape</Option>
+            <Option>height</Option>
+            <Option>offset_dist</Option>
+            <Option>fade</Option>
+            <Option>texture_aspect</Option>
+            <Option>color_shift</Option>
+            <Option>ambient_intensity</Option>
+            <Option>cull_mode</Option>
+            <Option>vert_increase</Option>
+          </Options>
+        </Block>
+        <Block name="Field">
+          <Options>
+            <Option>cube_size</Option>
+            <Option>fill_dist</Option>
+            <Option>tint_field</Option>
+            <Option>diffuse_color</Option>
+            <Option>ambient_color</Option>
+            <Option>ambient_increase</Option>
+            <Option>empty_cube_frequency</Option>
+            <Option>max_alpha</Option>
+            <Option>contains_fog_zone</Option>
+          </Options>
+        </Block>
+        <Block name="LootableZone" multiple="true">
+          <Options>
+            <Option>zone</Option>
+            <Option>asteroid_loot_container</Option>
+            <Option>asteroid_loot_commodity</Option>
+            <Option>dynamic_loot_container</Option>
+            <Option>dynamic_loot_commodity</Option>
+            <Option>asteroid_loot_count</Option>
+            <Option>dynamic_loot_count</Option>
+            <Option>asteroid_loot_difficulty</Option>
+            <Option>dynamic_loot_difficulty</Option>
+          </Options>
+        </Block>
+        <Block name="properties">
+          <Options>
+            <Option multiple="true">flag</Option>
+          </Options>
+        </Block>
+        <Block name="Texture" multiple="true">
+          <Options>
+            <Option>file</Option>
+            <Option>texture_name</Option>
+            <Option>shape_name</Option>
+            <Option>tex_shape</Option>
+          </Options>
+        </Block>
+        <Block name="TexturePanels">
+          <Options>
+            <Option>file</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Solar Blackholes">
+      <Paths>
+        <Path>solar\blackhole\*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Clouds">
+          <Options>
+            <Option>max_distance</Option>
+            <Option>puff_density</Option>
+            <Option>puff_cloud_size</Option>
+            <Option>puff_colora</Option>
+            <Option multiple="true">puff_shape</Option>
+            <Option>puff_weights</Option>
+            <Option>puff_particles</Option>
+            <Option>puff_size</Option>
+            <Option>puff_drift</Option>
+            <Option>puff_opacity</Option>
+          </Options>
+        </Block>
+        <Block name="Exterior">
+          <Options>
+            <Option>shape</Option>
+            <Option>opacity</Option>
+            <Option>thickness_edge</Option>
+            <Option>fade_range</Option>
+            <Option>ball_scale</Option>
+            <Option>flash</Option>
+            <Option>flash_radius</Option>
+            <Option>flash_size</Option>
+            <Option>spin</Option>
+          </Options>
+        </Block>
+        <Block name="Fog">
+          <Options>
+            <Option>opacity</Option>
+            <Option>color</Option>
+          </Options>
+        </Block>
+        <Block name="Shape" multiple="true" identifier="name">
+          <Options>
+            <Option>name</Option>
+            <Option>x</Option>
+            <Option>y</Option>
+            <Option>w</Option>
+            <Option>h</Option>
+          </Options>
+        </Block>
+        <Block name="Texture" multiple="true" identifier="name">
+          <Options>
+            <Option>file</Option>
+            <Option>name</Option>
+          </Options>
+        </Block>
+        <Block name="TexturePanels">
+          <Options>
+            <Option multiple="true">file</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Solar Nebulae">
+      <Paths>
+        <Path>solar\nebula\*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="BackgroundLightning">
+          <Options>
+            <Option>duration</Option>
+            <Option>gap</Option>
+            <Option>color</Option>
+          </Options>
+        </Block>
+        <Block name="Clouds">
+          <Options>
+            <Option>max_distance</Option>
+            <Option>puff_count</Option>
+            <Option>puff_radius</Option>
+            <Option>puff_colora</Option>
+            <Option>puff_colorb</Option>
+            <Option>puff_max_alpha</Option>
+            <Option multiple="true">puff_shape</Option>
+            <Option>puff_weights</Option>
+            <Option>puff_drift</Option>
+            <Option>near_fade_distance</Option>
+            <Option>lightning_intensity</Option>
+            <Option>lightning_color</Option>
+            <Option>lightning_gap</Option>
+            <Option>lightning_duration</Option>
+          </Options>
+        </Block>
+        <Block name="DynamicLightning">
+          <Options>
+            <Option>gap</Option>
+            <Option>duration</Option>
+            <Option>color</Option>
+            <Option>ambient_intensity</Option>
+            <Option>intensity_increase</Option>
+          </Options>
+        </Block>
+        <Block name="Exclusion Zones">
+          <Options>
+            <Option multiple="true">exclusion</Option>
+            <Option parent="exclusion">fog_far</Option>
+            <Option multiple="true">zone_shell</Option><!--actual parent="exclusion"-->
+            <Option multiple="true">max_alpha</Option><!--actual parent="exclusion"-->
+            <Option multiple="true">exclusion_tint</Option><!--actual parent="exclusion"-->
+            <Option multiple="true">shell_scalar</Option><!--actual parent="exclusion"-->
+          </Options>
+        </Block>
+        <Block name="Exterior">
+          <Options>
+            <Option multiple="true">shape</Option>
+            <Option>shape_weights</Option>
+            <Option>fill_shape</Option>
+            <Option>plane_slices</Option>
+            <Option>bit_radius</Option>
+            <Option>bit_radius_random_variation</Option>
+            <Option>min_bits</Option>
+            <Option>max_bits</Option>
+            <Option>move_bit_percent</Option>
+            <Option>equator_bias</Option>
+            <Option>color</Option>
+          </Options>
+        </Block>
+        <Block name="Fog">
+          <Options>
+            <Option>fog_enabled</Option>
+            <Option>near</Option>
+            <Option>distance</Option>
+            <Option>color</Option>
+          </Options>
+        </Block>
+        <Block name="NebulaLight">
+          <Options>
+            <Option>ambient</Option>
+            <Option>sun_burnthrough_intensity</Option>
+            <Option>sun_burnthrough_scaler</Option>
+          </Options>
+        </Block>
+        <Block name="properties">
+          <Options>
+            <Option multiple="true">flag</Option>
+          </Options>
+        </Block>
+        <Block name="Texture" multiple="true">
+          <Options>
+            <Option>file</Option>
+            <Option multiple="true">texture_name</Option>
+            <Option multiple="true">shape_name</Option>
+            <Option multiple="true" parent="shape_name">dim</Option>
+            <Option>tex_shape</Option>
+          </Options>
+        </Block>
+        <Block name="TexturePanels">
+          <Options>
+            <Option>file</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Solar Rings">
+      <Paths>
+        <Path>solar\rings\*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Clouds">
+          <Options>
+            <Option>max_distance</Option>
+            <Option>puff_count</Option>
+            <Option>puff_radius</Option>
+            <Option>puff_colora</Option>
+            <Option>puff_colorb</Option>
+            <Option>puff_max_alpha</Option>
+            <Option multiple="true">puff_shape</Option>
+            <Option>puff_weights</Option>
+            <Option>puff_drift</Option>
+            <Option>near_fade_distance</Option>
+          </Options>
+        </Block>
+        <Block name="Exterior">
+          <Options>
+            <Option>shape</Option>
+            <Option>detail_shape</Option>
+            <Option>detail_tile</Option>
+            <Option>color</Option>
+            <Option>opacity</Option>
+            <Option>thickness_edge</Option>
+            <Option>fade_range</Option>
+            <Option>outer_edge</Option>
+            <Option>inner_edge</Option>
+            <Option>num_segments</Option>
+            <Option>transition_dist</Option>
+          </Options>
+        </Block>
+        <Block name="TexturePanels">
+          <Options>
+            <Option>file</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Solar Ring Shapes">
+      <Paths>
+        <Path>solar\rings\shapes.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Shape" multiple="true" identifier="name">
+          <Options>
+            <Option>x</Option>
+            <Option>y</Option>
+            <Option>w</Option>
+            <Option>h</Option>
+            <Option>name</Option>
+          </Options>
+        </Block>
+        <Block name="Texture" multiple="true" identifier="name">
+          <Options>
+            <Option>file</Option>
+            <Option>name</Option>
+            <Option>texture_name</Option>
+            <Option multiple="true">shape_name</Option>
+            <Option parent="shape_name">dim</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Universe Mission Created Solars">
+      <Paths>
+        <Path>universe\missioncreatedsolars.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="MissionCreatedSolar" multiple="true" identifier="base">
+          <Options>
+            <Option>base</Option>
+            <Option>pos</Option>
+            <Option>ids_info</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Universe Path">
+      <Paths>
+        <Path>universe\shortest_illegal_path.ini</Path>
+        <Path>universe\shortest_legal_path.ini</Path>
+        <Path>universe\systems_shortest_path.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="SystemConnections" multiple="true">
+          <Options>
+            <Option multiple="true">Path</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Universe">
+      <Paths>
+        <Path>universe\universe.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Base" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>system</Option>
+            <Option>strid_name</Option>
+            <Option>file</Option>
+            <Option>autosave_forbidden</Option>
+            <Option>BGCS_base_run_by</Option>
+            <Option>terrain_tiny</Option>
+            <Option>terrain_sml</Option>
+            <Option>terrain_mdm</Option>
+            <Option>terrain_lrg</Option>
+            <Option>terrain_dyna_01</Option>
+            <Option>terrain_dyna_02</Option>
+          </Options>
+        </Block>
+        <Block name="system" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>file</Option>
+            <Option>pos</Option>
+            <Option>msg_id_prefix</Option>
+            <Option>visit</Option>
+            <Option>strid_name</Option>
+            <Option>ids_info</Option>
+            <Option>NavMapScale</Option>
+          </Options>
+        </Block>
+        <Block name="Time">
+          <Options>
+            <Option>seconds_per_day</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Universe Heaven">
+      <Paths>
+        <Path>universe\heavens\shapes.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Shape" multiple="true" identifier="name">
+          <Options>
+            <Option>name</Option>
+            <Option>x</Option>
+            <Option>y</Option>
+            <Option>w</Option>
+            <Option>h</Option>
+          </Options>
+        </Block>
+        <Block name="Texture" multiple="true" identifier="name">
+          <Options>
+            <Option>file</Option>
+            <Option>name</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="Territory (Adoxa Plugin)">
+      <Paths>p
+        <Path>universe\territory.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Settings">
+          <Options>
+            <Option type="Bool">caps</Option>
+            <Option type="String">codepage</Option>
+          </Options>
+        </Block>
+        <Block name="Houses" multiple="true" identifier="format">
+          <Options>
+            <Option type="String">format</Option>
+            <Option type="String">house</Option>
+            <Option type="String" multiple="true">systems</Option>
+          </Options>
+        </Block>
+        <Block name="Systems" multiple="true" identifier="format">
+          <Options>
+            <Option type="String">format</Option>
+            <Option type="String" multiple="true">systems</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="System Base">
+      <Paths>
+        <Path>universe\systems\*\bases\*_base.ini</Path>
+        <Path>universe\systems\*_mining_base.ini</Path>
+        <Path>universe\systems\miners\*_miner.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="BaseInfo">
+          <Options>
+            <Option>nickname</Option>
+            <Option>start_room</Option>
+          </Options>
+        </Block>
+        <Block name="Room" multiple="true" identifier="nickname">
+          <Options>
+            <Option>nickname</Option>
+            <Option>file</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="System">
+      <Paths>
+        <Path>universe\systems\*\*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Ambient">
+          <Options>
+            <Option type="Rgb">color</Option>
+          </Options>
+        </Block>
+        <Block name="Archetype">
+          <Options>
+            <Option multiple="true">solar</Option>
+            <Option multiple="true">ship</Option>
+            <Option multiple="true" parent="ship">simple</Option>
+            <Option multiple="true">equipment</Option>
+            <Option multiple="true">snd</Option>
+            <Option multiple="true">voice</Option>
+          </Options>
+        </Block>
+        <Block name="Asteroids" multiple="true" identifier="zone">
+          <Options>
+            <Option type="Path">file</Option>
+            <Option type="String">zone</Option>
+          </Options>
+        </Block>
+        <Block name="Background">
+          <Options>
+            <Option type="String">basic_stars</Option>
+            <Option type="String">complex_stars</Option>
+            <Option type="String">nebulae</Option>
+          </Options>
+        </Block>
+        <Block name="Dust">
+          <Options>
+            <Option type="String">spacedust</Option>
+          </Options>
+        </Block>
+        <Block name="EncounterParameters" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Path">filename</Option>
+          </Options>
+        </Block>
+        <Block name="LightSource" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Vector">pos</Option>
+            <Option type="Vector">rotate</Option>
+            <Option type="Rgb">color</Option>
+            <Option type="Double">range</Option>
+            <Option type="String">type</Option>
+            <Option type="String">direction</Option>
+            <Option type="String">atten_curve</Option>
+            <Option type="Double">attenuation</Option>
+            <Option type="String">color_curve</Option>
+          </Options>
+        </Block>
+        <Block name="Music">
+          <Options>
+            <Option type="String">space</Option>
+            <Option type="String">danger</Option>
+            <Option type="String">battle</Option>
+          </Options>
+        </Block>
+        <Block name="Nebula" multiple="true" identifier="zone">
+          <Options>
+            <Option type="Path">file</Option>
+            <Option type="String">zone</Option>
+          </Options>
+        </Block>
+        <Block name="Object" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">ids_name</Option>
+            <Option type="Vector">pos</Option>
+            <Option type="Vector">rotate</Option>
+            <Option type="Rgb">ambient_color</Option>
+            <Option type="String">archetype</Option>
+            <Option type="String">star</Option>
+            <Option type="Vector">spin</Option>
+            <Option type="String">msg_id_prefix</Option>
+            <Option type="String">jump_effect</Option>
+            <Option type="Double">atmosphere_range</Option>
+            <Option type="Rgb">burn_color</Option>
+            <Option type="String">prev_ring</Option>
+            <Option type="String">next_ring</Option>
+            <Option type="Int" renameFrom="info_ids,info_card,info_card_ids">ids_info</Option>
+            <Option type="String">ring</Option>
+            <Option type="String">base</Option>
+            <Option type="String">dock_with</Option>
+            <Option type="Rgb">Ambient</Option>
+            <Option type="Int">visit</Option>
+            <Option type="String">reputation</Option>
+            <Option type="String">tradelane_space_name</Option>
+            <Option type="String">behavior</Option>
+            <Option type="String">voice</Option>
+            <Option type="String">space_costume</Option>
+            <Option type="String">faction</Option>
+            <Option type="Int">difficulty_level</Option>
+            <Option type="String">goto</Option>
+            <Option type="String">loadout</Option>
+            <Option type="String">pilot</Option>
+            <Option type="String">parent</Option>
+          </Options>
+        </Block>
+        <Block name="SystemInfo">
+          <Options>
+            <Option type="Rgb">space_color</Option>
+            <Option type="String">local_faction</Option>
+            <Option type="String">rpop_solar_detection</Option>
+            <Option type="Double">space_farclip</Option>
+          </Options>
+        </Block>
+        <Block name="TexturePanels">
+          <Options>
+            <Option type="Path">file</Option>
+          </Options>
+        </Block>
+        <Block name="zone" multiple="true" identifier="nickname">
+          <Options>
+            <Option type="String">nickname</Option>
+            <Option type="Int">ids_name</Option>
+            <Option type="Vector">pos</Option>
+            <Option type="Vector">rotate</Option>
+            <Option type="String">shape</Option>
+            <Option type="Vector">size</Option>
+            <Option type="Vector">spin</Option>
+            <Option type="String">property_flags</Option>
+            <Option type="Rgb">property_fog_color</Option>
+            <Option type="Double">damage</Option>
+            <Option type="Int">visit</Option>
+            <Option type="String" renameFrom="pacedust">spacedust</Option>
+            <Option type="Int" renameFrom="spacedust_masparticles,spacedusr_maxparticles,spacedust _maxparticles,spacedust_maxdust">spacedust_maxparticles</Option>
+            <Option type="Double">interference</Option>
+            <Option type="Double">drag_modifier</Option>
+            <Option type="Double">edge_fraction</Option>
+            <Option type="Int">ids_info</Option>
+            <Option type="Int">attack_ids</Option>
+            <Option type="String">mission_type</Option>
+            <Option type="String">comment</Option>
+            <Option type="String">lane_id</Option>
+            <Option type="String">tradelane_attack</Option>
+            <Option type="String">tradelane_down</Option>
+            <Option type="Int">sort</Option>
+            <Option type="String">vignette_type</Option>
+            <Option type="Int">toughness</Option>
+            <Option type="Double">density</Option>
+            <Option type="Double">repop_time</Option>
+            <Option type="Int">max_battle_size</Option>
+            <Option type="String">pop_type</Option>
+            <Option type="Double">relief_time</Option>
+            <Option type="Double">population_additive</Option>
+            <Option type="String">path_label</Option>
+            <Option type="String">usage</Option>
+            <Option type="String">mission_eligible</Option>
+            <Option type="String" multiple="true">density_restriction</Option>
+            <Option type="String" multiple="true">encounter</Option>
+            <Option type="String" multiple="true" parent="encounter">faction</Option>
+            <Option type="String">Music</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+    <File name="System Room">
+      <Paths>
+        <Path>universe\systems\*\bases\rooms\*.ini</Path>
+      </Paths>
+      <Blocks>
+        <Block name="Camera">
+          <Options>
+            <Option>name</Option>
+          </Options>
+        </Block>
+        <Block name="CharacterPlacement">
+          <Options>
+            <Option>name</Option>
+            <Option>start_script</Option>
+          </Options>
+        </Block>
+        <Block name="FlashlightLine" multiple="true">
+          <Options>
+            <Option>icolor</Option>
+            <Option>scale</Option>
+            <Option>gap</Option>
+            <Option>blink</Option>
+            <Option>endpause</Option>
+            <Option>numlights</Option>
+            <Option multiple="true">hardpoint</Option>
+          </Options>
+        </Block>
+        <Block name="FlashlightSet" multiple="true">
+          <Options>
+            <Option>icolor</Option>
+            <Option>scale</Option>
+            <Option>gap</Option>
+            <Option>blink</Option>
+            <Option>endpause</Option>
+            <Option>numlights</Option>
+            <Option multiple="true">hardpoint</Option>
+          </Options>
+        </Block>
+        <Block name="ForSaleShipPlacement">
+          <Options>
+            <Option>name</Option>
+          </Options>
+        </Block>
+        <Block name="Hotspot" multiple="true" identifier="name">
+          <Options>
+            <Option>name</Option>
+            <Option>behavior</Option>
+            <Option>room_switch</Option>
+            <Option>state_read</Option>
+            <Option>state_send</Option>
+            <Option>set_virtual_room</Option>
+            <Option>virtual_room</Option>
+          </Options>
+        </Block>
+        <Block name="PlayerShipPlacement">
+          <Options>
+            <Option>name</Option>
+            <Option>landing_script</Option>
+            <Option>launching_script</Option>
+          </Options>
+        </Block>
+        <Block name="Room_Info">
+          <Options>
+            <Option>set_script</Option>
+            <Option multiple="true">scene</Option>
+            <Option>animation</Option>
+            <Option>goodscart_script</Option>
+          </Options>
+        </Block>
+        <Block name="Room_Sound">
+          <Options>
+            <Option>music</Option>
+            <Option>ambient</Option>
+          </Options>
+        </Block>
+        <Block name="Spiels">
+          <Options>
+            <Option>CommodityDealer</Option>
+            <Option>EquipmentDealer</Option>
+            <Option>ShipDealer</Option>
+          </Options>
+        </Block>
+      </Blocks>
+    </File>
+  </Files>
+</FreelancerModStudio-Template-1.0>
